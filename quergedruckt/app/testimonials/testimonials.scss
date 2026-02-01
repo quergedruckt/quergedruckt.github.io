@@ -1,0 +1,209 @@
+@import '../styles/variables.scss';
+
+.testimonials {
+  background-color: $primary-dark-orange;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  height: 905px;
+  align-items: center;
+  padding: 130px 80px;
+  width: 100%;
+
+  .testimonials-header {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+
+    .testimonials-title-section {
+      display: flex;
+      flex: 1 0 0;
+      flex-direction: column;
+      gap: 16px;
+      align-items: flex-start;
+      min-height: 1px;
+      min-width: 1px;
+
+      .testimonials-title {
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 64px;
+        color: $white;
+        text-align: center;
+        letter-spacing: -0.48px;
+        width: 100%;
+        white-space: pre-wrap;
+        margin: 0;
+      }
+
+      .testimonials-description {
+        font-family: 'Urbanist', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #b3b3b3;
+        text-align: center;
+        letter-spacing: -0.16px;
+        width: 100%;
+        white-space: pre-wrap;
+        margin: 0;
+      }
+    }
+  }
+
+  .testimonials-grid {
+    display: flex;
+    gap: 32px;
+    height: 321px;
+    align-items: center;
+    width: 100%;
+
+    .testimonial-card {
+      flex: 1 0 0;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 1px;
+      min-width: 1px;
+      position: relative;
+
+      .testimonial-card-inner {
+        background-color: #0a0400;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+        padding: 32px 24px;
+        border-radius: 16px;
+        width: 100%;
+        height: 100%;
+        transform: rotate(0.22deg) skewX(0.01deg);
+      }
+
+      .testimonial-card-inner {
+        .testimonial-profile {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+          align-items: center;
+
+          .testimonial-avatar {
+            width: 40px;
+            height: 40px;
+            position: relative;
+          }
+
+          .testimonial-info {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            white-space: pre-wrap;
+
+            .testimonial-name {
+              font-family: 'Urbanist', sans-serif;
+              font-weight: 500;
+              font-size: 24px;
+              line-height: 32px;
+              min-width: 100%;
+              color: $white;
+              width: min-content;
+              margin: 0;
+            }
+
+            .testimonial-role {
+              font-family: 'Urbanist', sans-serif;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: normal;
+              color: #b3b3b3;
+              width: 242.475px;
+              margin: 0;
+            }
+          }
+        }
+
+        .testimonial-rating {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          align-items: center;
+          width: 100%;
+
+          .stars {
+            display: flex;
+            gap: 6px;
+            align-items: center;
+
+            > * {
+              width: 16px;
+              height: 16px;
+              position: relative;
+            }
+          }
+
+          .rating-text {
+            font-family: 'Urbanist', sans-serif;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: normal;
+            text-align: center;
+            color: $white;
+            margin: 0;
+          }
+        }
+
+        .testimonial-text {
+          font-family: 'Urbanist', sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: #b3b3b3;
+          text-align: center;
+          width: 338.28px;
+          white-space: pre-wrap;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .testimonials-pagination {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+
+    .pagination-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px 24px;
+      border-radius: 100px;
+      width: 56px;
+      position: relative;
+
+      &.active {
+        background-color: $primary-orange;
+      }
+
+      &.inactive {
+        background-color: rgba(255, 115, 34, 0.1);
+        transform: rotate(180deg);
+
+        .pagination-icon {
+          transform: rotate(180deg);
+        }
+      }
+
+      .pagination-icon {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,142 @@
+@import '../styles/variables.scss';
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  height: 610px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 130px 80px;
+  width: 100%;
+
+  .about-us-content {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+    width: 100%;
+
+    .about-us-text {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      align-items: flex-start;
+      width: 564px;
+
+      .about-us-header {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+        width: 100%;
+
+        .section-label {
+          font-family: 'Urbanist', sans-serif;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: normal;
+          color: $primary-orange;
+          text-transform: capitalize;
+          margin: 0;
+        }
+
+        .about-us-title-section {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          align-items: flex-start;
+          width: 100%;
+
+          .about-us-title {
+            height: 96px;
+            font-family: 'Lato', sans-serif;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 48px;
+            color: $white;
+            text-transform: capitalize;
+            margin: 0;
+            width: 437px;
+            white-space: pre-wrap;
+          }
+
+          .about-us-description {
+            font-family: 'Urbanist', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: #ccc;
+            width: 548px;
+            white-space: pre-wrap;
+            margin: 0;
+          }
+        }
+      }
+
+      .about-us-features {
+        height: 72px;
+        position: relative;
+        width: 100%;
+
+        .feature-item {
+          position: absolute;
+          display: flex;
+          gap: 12px;
+          align-items: center;
+
+          &:nth-child(1) {
+            left: 0;
+            top: 0;
+          }
+
+          &:nth-child(2) {
+            left: 0;
+            top: 48px;
+          }
+
+          &:nth-child(3) {
+            left: 241px;
+            top: 0;
+          }
+
+          &:nth-child(4) {
+            left: 241px;
+            top: 48px;
+          }
+
+          .feature-icon {
+            width: 24px;
+            height: 24px;
+            position: relative;
+            flex-shrink: 0;
+          }
+
+          .feature-text {
+            font-family: 'Urbanist', sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: normal;
+            color: #b3b3b3;
+            margin: 0;
+            white-space: pre-wrap;
+          }
+        }
+      }
+    }
+
+    .about-us-image {
+      flex: 1 0 0;
+      height: 350px;
+      min-height: 1px;
+      min-width: 1px;
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+
+      .about-us-img {
+        object-fit: cover;
+        border-radius: 16px;
+        pointer-events: none;
+      }
+    }
+  }
+}

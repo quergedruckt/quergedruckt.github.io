@@ -1,0 +1,189 @@
+@import '../styles/variables.scss';
+
+.services {
+  background-color: $primary-dark-orange;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  height: 974px;
+  align-items: flex-start;
+  padding: 130px 80px;
+  width: 100%;
+
+  .services-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+
+    .services-title-section {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: flex-start;
+      width: 659px;
+      white-space: pre-wrap;
+
+      .section-label {
+        font-family: 'Urbanist', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: normal;
+        color: $primary-orange;
+        width: 100%;
+        margin: 0;
+      }
+
+      .services-title {
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        color: $white;
+        margin: 0;
+        width: 100%;
+      }
+    }
+
+    .btn-outline {
+      border: 1px solid $primary-orange;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 20px;
+      border-radius: 12px;
+      background: transparent;
+      color: $white;
+      font-family: 'Urbanist', sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: normal;
+      cursor: pointer;
+    }
+  }
+
+  .services-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    width: 100%;
+
+    .services-row {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      width: 100%;
+
+      .service-card {
+        height: 269px;
+        overflow: hidden;
+        border-radius: 16px;
+        width: 410px;
+        position: relative;
+
+        &.highlighted {
+          border: 1.5px solid rgba(255, 115, 34, 0.2);
+        }
+
+        .service-card-content {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          top: 24px;
+          width: 362px;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          align-items: flex-start;
+
+          .service-icon-wrapper {
+            .service-icon-bg {
+              background: rgba(255, 255, 255, 0.15);
+              display: flex;
+              align-items: center;
+              padding: 10px;
+              border-radius: 8px;
+
+              &.highlighted {
+                background: rgba(255, 115, 34, 0.15);
+              }
+            }
+          }
+
+          .service-details {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            align-items: flex-start;
+            width: 100%;
+
+            .service-text {
+              display: flex;
+              flex-direction: column;
+              gap: 16px;
+              align-items: flex-start;
+              width: 100%;
+              white-space: pre-wrap;
+
+              .service-title {
+                font-family: 'Urbanist', sans-serif;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: normal;
+                color: $white;
+                text-transform: capitalize;
+                width: 100%;
+                margin: 0;
+              }
+
+              .service-description {
+                font-family: 'Urbanist', sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: #b3b3b3;
+                width: 100%;
+                margin: 0;
+              }
+            }
+
+            .service-link {
+              display: flex;
+              gap: 4px;
+              align-items: center;
+
+              .link-text {
+                font-family: 'Urbanist', sans-serif;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: normal;
+                color: #b3b3b3;
+                text-transform: capitalize;
+                margin: 0;
+
+                &.highlighted {
+                  color: $primary-orange;
+                }
+              }
+
+              .link-arrow {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 20px;
+                height: 20px;
+                position: relative;
+
+                .arrow-icon {
+                  transform: rotate(-90deg);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

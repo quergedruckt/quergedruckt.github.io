@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 1;
+
+    .actions {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .quergedrucktLogo {
+        width: 15% !important;
+        height: auto !important;
+        padding-top: 30px;
+        padding-left: 80px;
+    }
+
+    .navigationItems {
+        justify-content: space-evenly;
+    }
+}

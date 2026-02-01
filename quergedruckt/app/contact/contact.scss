@@ -1,0 +1,344 @@
+@import '../styles/variables.scss';
+
+.contact {
+  background-color: $primary-dark-orange;
+  display: flex;
+  flex-direction: column;
+  height: 840px;
+  align-items: flex-start;
+  padding: 120px 80px;
+  width: 100%;
+
+  .contact-card {
+    background-color: #0a0400;
+    display: flex;
+    gap: 80px;
+    height: 600px;
+    align-items: flex-start;
+    padding: 32px;
+    border-radius: 24px;
+    width: 100%;
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 153px;
+      height: 100%;
+      align-items: flex-start;
+      width: 588px;
+
+      .contact-header {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        align-items: flex-start;
+        width: 100%;
+
+        .contact-badge {
+          border: 1px solid rgba(255, 115, 34, 0.3);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 8px 16px;
+          border-radius: 100px;
+          overflow: hidden;
+
+          .badge-text {
+            font-family: 'Urbanist', sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: normal;
+            color: $primary-orange;
+            margin: 0;
+          }
+        }
+
+        .contact-title-section {
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+          align-items: flex-start;
+          width: 100%;
+          white-space: pre-wrap;
+
+          .contact-title {
+            font-family: 'Lato', sans-serif;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 48px;
+            color: $white;
+            width: 100%;
+            margin: 0;
+          }
+
+          .contact-description {
+            font-family: 'Urbanist', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #b3b3b3;
+            width: 100%;
+            margin: 0;
+          }
+        }
+      }
+
+      .contact-social {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+
+        .social-label {
+          font-family: 'Urbanist', sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: $white;
+          width: 494px;
+          white-space: pre-wrap;
+          margin: 0;
+        }
+
+        .social-icons {
+          display: flex;
+          gap: 11px;
+          align-items: center;
+
+          .social-icon {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-radius: 12px;
+            position: relative;
+            width: 40px;
+            height: 40px;
+
+            > * {
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+            }
+          }
+        }
+      }
+    }
+
+    .contact-form-wrapper {
+      display: flex;
+      flex: 1 0 0;
+      flex-direction: column;
+      align-items: flex-start;
+      min-height: 1px;
+      min-width: 1px;
+
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        align-items: flex-start;
+        width: 100%;
+
+        .form-row {
+          display: flex;
+          gap: 32px;
+          align-items: flex-start;
+          width: 100%;
+
+          .form-field {
+            display: flex;
+            flex: 1 0 0;
+            flex-direction: column;
+            gap: 6px;
+            align-items: flex-start;
+            min-height: 1px;
+            min-width: 1px;
+          }
+        }
+
+        .form-field {
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+          align-items: flex-start;
+          width: 100%;
+
+          &.message {
+            height: 142px;
+            isolation: isolate;
+            position: relative;
+
+            .field-input {
+              flex: 1 0 0;
+              min-height: 1px;
+              min-width: 1px;
+            }
+          }
+
+          .field-label {
+            display: flex;
+            gap: 2px;
+            align-items: flex-start;
+
+            .label-text {
+              font-family: 'Urbanist', sans-serif;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 1.5;
+              color: $white;
+              margin: 0;
+            }
+
+            .label-required {
+              font-family: 'Urbanist', sans-serif;
+              font-weight: 500;
+              font-size: 14px;
+              line-height: 20px;
+              color: $primary-orange;
+              margin: 0;
+            }
+          }
+
+          .field-input {
+            background-color: $primary-dark-orange;
+            border: 1px solid rgba(235, 235, 235, 0.1);
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            padding: 12px 14px;
+            border-radius: 8px;
+            width: 100%;
+
+            &.phone {
+              padding: 0;
+
+              .phone-prefix {
+                display: flex;
+                gap: 4px;
+                height: 100%;
+                align-items: center;
+                overflow: hidden;
+                padding: 12px 14px;
+                position: relative;
+
+                .prefix-text {
+                  font-family: 'Urbanist', sans-serif;
+                  font-weight: 400;
+                  font-size: 14px;
+                  line-height: 1.25;
+                  color: $white;
+                  margin: 0;
+                }
+
+                > *:last-child {
+                  width: 20px;
+                  height: 20px;
+                  position: relative;
+                }
+              }
+
+              > *:last-child {
+                display: flex;
+                flex: 1 0 0;
+                gap: 8px;
+                align-items: center;
+                min-height: 1px;
+                min-width: 1px;
+                padding: 12px 14px 12px 12px;
+              }
+            }
+
+            &.message-input {
+              flex-direction: column;
+              align-items: flex-start;
+              gap: 8px;
+              overflow: hidden;
+              padding: 12px 14px;
+              position: relative;
+
+              .message-icon {
+                position: absolute;
+                bottom: 5px;
+                right: 5px;
+                width: 12px;
+                height: 12px;
+              }
+            }
+
+            .input-placeholder {
+              font-family: 'Urbanist', sans-serif;
+              font-weight: 300;
+              font-size: 14px;
+              line-height: 1.25;
+              color: #b3b3b3;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              margin: 0;
+            }
+          }
+        }
+
+        .form-checkbox {
+          display: flex;
+          gap: 12px;
+          align-items: flex-start;
+          width: 100%;
+
+          .checkbox {
+            border: 1px solid #d5d7da;
+            border-radius: 6px;
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+            margin-top: 2px;
+          }
+
+          .checkbox-text {
+            font-family: 'Urbanist', sans-serif;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 1.5;
+            color: $white;
+            flex: 1 0 0;
+            min-height: 1px;
+            min-width: 1px;
+            margin: 0;
+
+            .link {
+              color: $primary-orange;
+            }
+          }
+        }
+
+        .btn-submit {
+          height: 48px;
+          overflow: hidden;
+          position: relative;
+          width: 538px;
+          background-color: $primary-orange;
+          border: none;
+          border-radius: 12px;
+          cursor: pointer;
+
+          &::before {
+            content: 'SUBMIT';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 14px;
+            font-family: 'Urbanist', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: $white;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+}
+

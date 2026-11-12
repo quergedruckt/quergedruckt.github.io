@@ -1,0 +1,272 @@
+{
+  "meta": {
+    "title": "quergedruckt | 3D-Druck, Prototyping & Design",
+    "description": "Individueller 3D-Druck, Prototyping und Design-Services für Innovatoren, Maker und Unternehmen."
+  },
+  "common": {
+    "getAQuote": "Angebot anfordern",
+    "learnMore": "Mehr erfahren"
+  },
+  "nav": {
+    "home": "Start",
+    "about": "Über uns",
+    "model3d": "3D-Modell",
+    "contact": "Kontakt",
+    "services": "Leistungen",
+    "gallery": "Galerie",
+    "faqs": "FAQ",
+    "menu": "Menü"
+  },
+  "language": {
+    "label": "Sprache",
+    "en": "English",
+    "de": "Deutsch"
+  },
+  "hero": {
+    "titleLine1": "Entdecke die Vorteile",
+    "titleLine2": "des 3D-Drucks",
+    "description": "Individueller 3D-Druck, Prototyping und Design-Services für Innovatoren, Maker und Unternehmen."
+  },
+  "about": {
+    "label": "Über uns",
+    "title": "Die Zukunft mit Präzision gestalten",
+    "description": "Wir verwandeln starke Ideen in elegante digitale Erlebnisse, die zum Handeln inspirieren, Nutzer erreichen und Marken weltweit stärken",
+    "features": {
+      "insight": "Kreativität mit Weitblick",
+      "scalable": "Skalierbare Wirkung",
+      "audience": "Zielgruppenorientiertes Denken",
+      "strategy": "Strategie trifft Storytelling"
+    }
+  },
+  "services": {
+    "label": "Unsere Leistungen",
+    "title": "Individuelle 3D-Lösungen für jeden Bedarf",
+    "items": {
+      "prototyping": {
+        "title": "Rapid Prototyping",
+        "description": "Aus Leidenschaft für Technologie und Design gegründet, steht quergedruckt für kreative Problemlösungen und präzises Handwerk."
+      },
+      "design": {
+        "title": "Design & Konstruktion",
+        "description": "Aus Leidenschaft für Technologie und Design gegründet, steht quergedruckt für kreative Problemlösungen und präzises Handwerk."
+      },
+      "printing": {
+        "title": "Individueller 3D-Druck",
+        "description": "Aus Leidenschaft für Technologie und Design gegründet, steht quergedruckt für kreative Problemlösungen und präzises Handwerk."
+      },
+      "scanning": {
+        "title": "3D-Scanning",
+        "description": "Aus Leidenschaft für Technologie und Design gegründet, steht quergedruckt für kreative Problemlösungen und präzises Handwerk."
+      },
+      "production": {
+        "title": "Serienteile",
+        "description": "Aus Leidenschaft für Technologie und Design gegründet, steht quergedruckt für kreative Problemlösungen und präzises Handwerk."
+      },
+      "reverse": {
+        "title": "Reverse Engineering",
+        "description": "Aus Leidenschaft für Technologie und Design gegründet, steht quergedruckt für kreative Problemlösungen und präzises Handwerk."
+      }
+    }
+  },
+  "why": {
+    "label": "Warum wir",
+    "title": "Das Vertrauen globaler Innovatoren",
+    "items": {
+      "tech": {
+        "title": "Moderne Technik",
+        "description": "Aus Leidenschaft für Technologie und Design gegründet, steht quergedruckt für kreative Problemlösungen und präzises Handwerk."
+      },
+      "quality": {
+        "title": "Qualitätskontrolle",
+        "description": "Aus Leidenschaft für Technologie und Design gegründet, steht quergedruckt für kreative Problemlösungen und präzises Handwerk."
+      },
+      "eco": {
+        "title": "Nachhaltige Praxis",
+        "description": "Aus Leidenschaft für Technologie und Design gegründet, steht quergedruckt für kreative Problemlösungen und präzises Handwerk."
+      }
+    }
+  },
+  "projects": {
+    "label": "Unsere Projekte",
+    "title": "Hochwertige 3D-Projekte für alle",
+    "items": {
+      "filament": {
+        "title": "Individuell 3D-gedrucktes Filament",
+        "description": "Aus Leidenschaft für Technologie und Design gegründet, steht quergedruckt für kreative Problemlösungen und präzises Handwerk."
+      },
+      "architecture": {
+        "title": "Architektonisches Gebäudemodell",
+        "description": "Aus Leidenschaft für Technologie und Design gegründet, steht quergedruckt für kreative Problemlösungen und präzises Handwerk."
+      },
+      "rcCar": {
+        "title": "3D-gedrucktes RC-Auto",
+        "description": "Aus Leidenschaft für Technologie und Design gegründet, steht quergedruckt für kreative Problemlösungen und präzises Handwerk."
+      },
+      "trophy": {
+        "title": "Design einer Meisterschaftstrophäe",
+        "description": "Aus Leidenschaft für Technologie und Design gegründet, steht quergedruckt für kreative Problemlösungen und präzises Handwerk."
+      }
+    }
+  },
+  "how": {
+    "label": "So funktioniert's",
+    "title": "Ideen schneller Wirklichkeit werden lassen",
+    "steps": {
+      "design": {
+        "title": "Modell entwerfen",
+        "description": "Aus Leidenschaft für Technologie und Design gegründet, steht quergedruckt für kreative Problemlösungen und präzises Handwerk."
+      },
+      "printing": {
+        "title": "Präzisions-3D-Druck",
+        "description": "Aus Leidenschaft für Technologie und Design gegründet, steht quergedruckt für kreative Problemlösungen und präzises Handwerk."
+      },
+      "delivery": {
+        "title": "Sichere, schnelle Lieferung",
+        "description": "Aus Leidenschaft für Technologie und Design gegründet, steht quergedruckt für kreative Problemlösungen und präzises Handwerk."
+      }
+    }
+  },
+  "testimonials": {
+    "title": "Das sagen unsere zufriedenen Kunden",
+    "description": "So hat Haven gewöhnliche Räume in außergewöhnliche Wohnerlebnisse verwandelt: zeitlose Interieurs, die Kunden schätzen und gern weiterempfehlen.",
+    "items": {
+      "annette": {
+        "role": "Webdesign",
+        "text": "Vestibulum eu quam nec neque pellentesque efficitur id eget nisl. Proin porta est convallis lacus bl"
+      },
+      "darlene": {
+        "role": "Marketing-Koordination",
+        "text": "Donec sed erat ut magna suscipit mattis. Aliquam erat volutpat. Morbi in orci risus. Donec pretium f"
+      },
+      "jerome": {
+        "role": "Hundetraining",
+        "text": "Aliquam porta nisl dolor, molestie pellentesque elit molestie in. Morbi metus neque, elementum ullam"
+      }
+    },
+    "previous": "Vorherige Bewertungen",
+    "next": "Nächste Bewertungen"
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "description": "Aus Leidenschaft für Technologie und Design gegründet, steht quergedruckt für kreative Problemlösungen und präzises Handwerk.",
+    "contactUs": "Kontakt aufnehmen",
+    "items": {
+      "speed": {
+        "question": "Wie schnell erfolgt die Produktion?",
+        "answer": "Aus Leidenschaft für Technologie und Design gegründet, steht quergedruckt für kreative Problemlösungen und präzises Handwerk."
+      },
+      "materials": {
+        "question": "Welche Materialien gibt es?",
+        "answer": "Aus Leidenschaft für Technologie und Design gegründet, steht quergedruckt für kreative Problemlösungen und präzises Handwerk."
+      },
+      "largeParts": {
+        "question": "Können auch große Teile gedruckt werden?",
+        "answer": "Aus Leidenschaft für Technologie und Design gegründet, steht quergedruckt für kreative Problemlösungen und präzises Handwerk."
+      },
+      "resale": {
+        "question": "Wie sieht es mit dem Wiederverkaufswert aus?",
+        "answer": "Aus Leidenschaft für Technologie und Design gegründet, steht quergedruckt für kreative Problemlösungen und präzises Handwerk."
+      },
+      "designHelp": {
+        "question": "Gibt es Unterstützung beim Design?",
+        "answer": "Aus Leidenschaft für Technologie und Design gegründet, steht quergedruckt für kreative Problemlösungen und präzises Handwerk."
+      },
+      "shipping": {
+        "question": "Ist weltweiter Versand möglich?",
+        "answer": "Aus Leidenschaft für Technologie und Design gegründet, steht quergedruckt für kreative Problemlösungen und präzises Handwerk."
+      }
+    }
+  },
+  "contact": {
+    "badge": "Kontakt",
+    "title": "Bringen wir ein starkes Unternehmen mit einer großartigen Website auf das nächste Level",
+    "description": "Jedes erfolgreiche Unternehmen braucht eine professionelle Website. Jetzt Kontakt aufnehmen und loslegen!",
+    "socialLabel": "Auch hier zu finden:",
+    "form": {
+      "firstName": "Vorname",
+      "lastName": "Nachname",
+      "email": "E-Mail",
+      "emailPlaceholder": "name@email.de",
+      "phone": "Telefonnummer",
+      "phonePlaceholder": "+49 123 4567890",
+      "message": "Nachricht",
+      "messagePlaceholder": "Nachricht hinterlassen...",
+      "consentPrefix": "Ich stimme der ",
+      "privacyPolicy": "Datenschutzerklärung",
+      "consentSuffix": " zu.",
+      "submit": "Absenden",
+      "sending": "Wird gesendet...",
+      "success": "Vielen Dank! Die Nachricht wurde gesendet.",
+      "error": "Etwas ist schiefgelaufen. Bitte später erneut versuchen.",
+      "errorRequired": "Bitte alle Pflichtfelder ausfüllen.",
+      "errorEmail": "Bitte eine gültige E-Mail-Adresse eingeben.",
+      "errorConsent": "Bitte der Datenschutzerklärung zustimmen."
+    }
+  },
+  "footer": {
+    "copyright": "Copyright © 2025 quergedruckt. Alle Rechte vorbehalten.",
+    "privacy": "Datenschutzerklärung",
+    "terms": "Nutzungsbedingungen",
+    "impressum": "Impressum"
+  },
+  "legal": {
+    "back": "Zurück zur Startseite",
+    "placeholderNotice": "Platzhalter: Die Angaben in eckigen Klammern vor dem Start durch die echten Daten ersetzen. Der erforderliche Inhalt hängt vom Unternehmen ab, daher den endgültigen Text prüfen lassen.",
+    "impressum": {
+      "title": "Impressum",
+      "metaTitle": "Impressum | quergedruckt",
+      "sections": {
+        "provider": {
+          "title": "Angaben gemäß § 5 DDG",
+          "body": "[Firma oder vollständiger Name]\n[Rechtsform]\n[Straße und Hausnummer]\n[PLZ und Ort]"
+        },
+        "contact": {
+          "title": "Kontakt",
+          "body": "[E-Mail-Adresse]\n[Telefonnummer]"
+        },
+        "representative": {
+          "title": "Vertreten durch",
+          "body": "[Name der vertretungsberechtigten Person]"
+        },
+        "register": {
+          "title": "Handelsregister",
+          "body": "[Registergericht und Registernummer, falls vorhanden]"
+        },
+        "vat": {
+          "title": "Umsatzsteuer-ID",
+          "body": "[Umsatzsteuer-Identifikationsnummer, falls vorhanden]"
+        },
+        "responsible": {
+          "title": "Verantwortlich für den Inhalt",
+          "body": "[Name und Anschrift]"
+        }
+      }
+    },
+    "privacy": {
+      "title": "Datenschutzerklärung",
+      "metaTitle": "Datenschutzerklärung | quergedruckt",
+      "sections": {
+        "controller": {
+          "title": "Verantwortliche Stelle",
+          "body": "[Name und Anschrift der verantwortlichen Stelle]\n[Kontakt-E-Mail für Datenschutzfragen]"
+        },
+        "hosting": {
+          "title": "Hosting",
+          "body": "Diese Website wird über GitHub Pages bereitgestellt. [Beschreiben, welche Daten beim Aufruf der Seite verarbeitet werden, etwa die IP-Adresse, sowie Anbieter und Rechtsgrundlage.]"
+        },
+        "contactForm": {
+          "title": "Kontaktformular",
+          "body": "Nachrichten über das Kontaktformular werden von Formspree an [Empfänger-E-Mail-Adresse] weitergeleitet. [Beschreiben, welche Daten erhoben werden (Name, E-Mail, Telefonnummer, Nachricht), Zweck, Anbieter, Speicherdauer und Rechtsgrundlage.]"
+        },
+        "language": {
+          "title": "Spracheinstellung",
+          "body": "Die gewählte Sprache wird im Browser gespeichert (Local Storage), damit sie beim nächsten Besuch erhalten bleibt. [Prüfen, ob dafür eine Einwilligung erforderlich ist.]"
+        },
+        "rights": {
+          "title": "Rechte der betroffenen Personen",
+          "body": "[Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch sowie das Beschwerderecht bei einer Aufsichtsbehörde auflisten.]"
+        }
+      }
+    }
+  }
+}

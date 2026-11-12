@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   gap: 70px;
-  height: 870px;
+  min-height: 870px;
   align-items: flex-start;
   padding: 65px 80px 130px;
   width: 100%;
@@ -50,7 +50,9 @@
       flex-direction: column;
       gap: 40px;
       align-items: flex-start;
-      width: 570px;
+      flex: 1 1 0;
+      min-width: 0;
+      max-width: 570px;
 
       .step-item {
         display: flex;
@@ -104,7 +106,9 @@
       height: 458px;
       position: relative;
       border-radius: 16px;
-      width: 650px;
+      flex: 1 1 0;
+      min-width: 0;
+      max-width: 650px;
       overflow: hidden;
 
       .how-it-works-img {
@@ -116,3 +120,49 @@
   }
 }
 
+.how-it-works {
+  @include tablet {
+    min-height: 0;
+    padding: 40px 40px 80px;
+    gap: 40px;
+
+    .how-it-works-content {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 40px;
+
+      .how-it-works-steps {
+        flex: none;
+        width: 100%;
+        max-width: none;
+      }
+
+      .how-it-works-image {
+        flex: none;
+        width: 100%;
+        max-width: none;
+        height: 300px;
+      }
+    }
+  }
+
+  @include phone {
+    padding: 32px 20px 56px;
+
+    .how-it-works-header .how-it-works-title {
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+    .how-it-works-content {
+      .how-it-works-steps .step-item .step-header {
+        font-size: 22px;
+        flex-wrap: wrap;
+      }
+
+      .how-it-works-image {
+        height: 220px;
+      }
+    }
+  }
+}

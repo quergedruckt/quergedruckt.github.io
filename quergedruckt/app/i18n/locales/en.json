@@ -1,0 +1,272 @@
+{
+  "meta": {
+    "title": "quergedruckt | 3D Printing, Prototyping & Design",
+    "description": "Custom 3D printing, prototyping, and design services for innovators, makers, and businesses."
+  },
+  "common": {
+    "getAQuote": "Get a Quote",
+    "learnMore": "Learn More"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "model3d": "3D Model",
+    "contact": "Contact",
+    "services": "Services",
+    "gallery": "Gallery",
+    "faqs": "Faqs",
+    "menu": "Menu"
+  },
+  "language": {
+    "label": "Language",
+    "en": "English",
+    "de": "Deutsch"
+  },
+  "hero": {
+    "titleLine1": "Get the benefits of",
+    "titleLine2": "3D printing",
+    "description": "Custom 3D Printing, Prototyping, and Design Services for Innovators, Makers, and Businesses."
+  },
+  "about": {
+    "label": "About Us",
+    "title": "Shaping Tomorrow with Precision",
+    "description": "We craft powerful ideas into sleek digital journeys that inspire action, connect with users, and elevate brands globally",
+    "features": {
+      "insight": "Insight-led creativity",
+      "scalable": "Scalable impact",
+      "audience": "Audience-centric thinking",
+      "strategy": "Strategy meets storytelling"
+    }
+  },
+  "services": {
+    "label": "Our Services",
+    "title": "Custom 3D solutions for every need",
+    "items": {
+      "prototyping": {
+        "title": "Rapid Prototyping",
+        "description": "Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship."
+      },
+      "design": {
+        "title": "Design & Engineering",
+        "description": "Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship."
+      },
+      "printing": {
+        "title": "Custom 3D Printing",
+        "description": "Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship."
+      },
+      "scanning": {
+        "title": "3D Scanning",
+        "description": "Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship."
+      },
+      "production": {
+        "title": "Production Parts",
+        "description": "Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship."
+      },
+      "reverse": {
+        "title": "Reverse Engineering",
+        "description": "Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship."
+      }
+    }
+  },
+  "why": {
+    "label": "Why Choose Us",
+    "title": "Trusted by Global Innovators",
+    "items": {
+      "tech": {
+        "title": "Advanced Tech",
+        "description": "Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship."
+      },
+      "quality": {
+        "title": "Quality Checks",
+        "description": "Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship."
+      },
+      "eco": {
+        "title": "Eco Practices",
+        "description": "Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship."
+      }
+    }
+  },
+  "projects": {
+    "label": "Our Projects",
+    "title": "High-quality 3D projects for all",
+    "items": {
+      "filament": {
+        "title": "Custom 3d printed filament",
+        "description": "Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship."
+      },
+      "architecture": {
+        "title": "Architectural Building Model",
+        "description": "Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship."
+      },
+      "rcCar": {
+        "title": "Rc Car 3d Printed",
+        "description": "Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship."
+      },
+      "trophy": {
+        "title": "Champion Trophy Design",
+        "description": "Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship."
+      }
+    }
+  },
+  "how": {
+    "label": "How It Works",
+    "title": "Turning Ideas into Reality Faster",
+    "steps": {
+      "design": {
+        "title": "Design Your Model",
+        "description": "Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship."
+      },
+      "printing": {
+        "title": "Precision 3D Printing",
+        "description": "Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship."
+      },
+      "delivery": {
+        "title": "Secure Fast Delivery",
+        "description": "Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship."
+      }
+    }
+  },
+  "testimonials": {
+    "title": "Our Happy Clients Says",
+    "description": "Discover how Haven has transformed ordinary spaces into extraordinary living experiences, creating timeless interiors that clients cherish and proudly recommend.",
+    "items": {
+      "annette": {
+        "role": "Web Designer",
+        "text": "Vestibulum eu quam nec neque pellentesque efficitur id eget nisl. Proin porta est convallis lacus bl"
+      },
+      "darlene": {
+        "role": "Marketing Coordinator",
+        "text": "Donec sed erat ut magna suscipit mattis. Aliquam erat volutpat. Morbi in orci risus. Donec pretium f"
+      },
+      "jerome": {
+        "role": "Dog Trainer",
+        "text": "Aliquam porta nisl dolor, molestie pellentesque elit molestie in. Morbi metus neque, elementum ullam"
+      }
+    },
+    "previous": "Previous testimonials",
+    "next": "Next testimonials"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "description": "Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship.",
+    "contactUs": "Contact Us",
+    "items": {
+      "speed": {
+        "question": "How fast is production?",
+        "answer": "Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship."
+      },
+      "materials": {
+        "question": "What materials do you offer?",
+        "answer": "Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship."
+      },
+      "largeParts": {
+        "question": "Can you print large parts?",
+        "answer": "Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship."
+      },
+      "resale": {
+        "question": "What about resale value?",
+        "answer": "Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship."
+      },
+      "designHelp": {
+        "question": "Do you provide design help?",
+        "answer": "Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship."
+      },
+      "shipping": {
+        "question": "Is shipping available worldwide?",
+        "answer": "Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship."
+      }
+    }
+  },
+  "contact": {
+    "badge": "Contact Us",
+    "title": "Let's enhance your excellent enterprise with an amazing website",
+    "description": "For every prosperous enterprise, a proficient website is necessary, and I'm the expert for it. Contact me now, let's kick-start!",
+    "socialLabel": "Also you can find me here:",
+    "form": {
+      "firstName": "First name",
+      "lastName": "Last name",
+      "email": "Email",
+      "emailPlaceholder": "you@email.com",
+      "phone": "Phone number",
+      "phonePlaceholder": "+1 (555) 000-0000",
+      "message": "Message",
+      "messagePlaceholder": "Leave us a message...",
+      "consentPrefix": "You agree to our friendly ",
+      "privacyPolicy": "Privacy policy",
+      "consentSuffix": ".",
+      "submit": "Submit",
+      "sending": "Sending...",
+      "success": "Thank you! Your message has been sent.",
+      "error": "Something went wrong. Please try again later.",
+      "errorRequired": "Please fill in all required fields.",
+      "errorEmail": "Please enter a valid email address.",
+      "errorConsent": "Please accept the privacy policy."
+    }
+  },
+  "footer": {
+    "copyright": "Copyright © 2025 quergedruckt, All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "impressum": "Legal Notice"
+  },
+  "legal": {
+    "back": "Back to home",
+    "placeholderNotice": "Placeholder: replace the bracketed entries with your real details before launch. The required content depends on your business, so have the final text checked.",
+    "impressum": {
+      "title": "Legal Notice",
+      "metaTitle": "Legal Notice | quergedruckt",
+      "sections": {
+        "provider": {
+          "title": "Provider",
+          "body": "[Company or full name]\n[Legal form]\n[Street and number]\n[Postcode and city]"
+        },
+        "contact": {
+          "title": "Contact",
+          "body": "[Email address]\n[Phone number]"
+        },
+        "representative": {
+          "title": "Represented by",
+          "body": "[Name of the authorised representative]"
+        },
+        "register": {
+          "title": "Commercial register",
+          "body": "[Register court and registration number, if applicable]"
+        },
+        "vat": {
+          "title": "VAT ID",
+          "body": "[VAT ID, if applicable]"
+        },
+        "responsible": {
+          "title": "Responsible for content",
+          "body": "[Name and address]"
+        }
+      }
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "metaTitle": "Privacy Policy | quergedruckt",
+      "sections": {
+        "controller": {
+          "title": "Controller",
+          "body": "[Name and address of the controller]\n[Contact email for privacy questions]"
+        },
+        "hosting": {
+          "title": "Hosting",
+          "body": "This website is hosted on GitHub Pages. [Describe which data is processed when the site is visited, such as the IP address, the provider and the legal basis.]"
+        },
+        "contactForm": {
+          "title": "Contact form",
+          "body": "Messages sent through the contact form are forwarded by Formspree to [recipient email address]. [Describe the data collected (name, email, phone number, message), the purpose, the provider, the retention period and the legal basis.]"
+        },
+        "language": {
+          "title": "Language preference",
+          "body": "The selected language is stored in the browser (local storage) so that it is remembered on the next visit. [Confirm whether this requires consent in your setup.]"
+        },
+        "rights": {
+          "title": "Rights of data subjects",
+          "body": "[List the rights to access, rectification, erasure, restriction of processing, data portability and objection, and the right to lodge a complaint with a supervisory authority.]"
+        }
+      }
+    }
+  }
+}

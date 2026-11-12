@@ -3,7 +3,7 @@
 .why-choose-us {
   display: flex;
   gap: 73px;
-  height: 806px;
+  min-height: 806px;
   align-items: center;
   padding: 130px 80px;
   width: 100%;
@@ -12,7 +12,9 @@
     height: 546px;
     position: relative;
     border-radius: 16px;
-    width: 638px;
+    flex: 1 1 0;
+    min-width: 0;
+    max-width: 638px;
     overflow: hidden;
 
     .why-choose-us-img {
@@ -27,7 +29,9 @@
     flex-direction: column;
     gap: 70px;
     align-items: flex-start;
-    width: 569px;
+    flex: 1 1 0;
+    min-width: 0;
+    max-width: 569px;
 
     .why-choose-us-header {
       display: flex;
@@ -119,3 +123,45 @@
   }
 }
 
+.why-choose-us {
+  @include tablet {
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 0;
+    padding: 80px 40px;
+    gap: 40px;
+
+    .why-choose-us-image {
+      flex: none;
+      width: 100%;
+      max-width: none;
+      height: 320px;
+    }
+
+    .why-choose-us-content {
+      flex: none;
+      width: 100%;
+      max-width: none;
+      gap: 40px;
+    }
+  }
+
+  @include phone {
+    padding: 56px 20px;
+
+    .why-choose-us-image {
+      height: 220px;
+    }
+
+    .why-choose-us-content {
+      .why-choose-us-header .why-choose-us-title {
+        font-size: 32px;
+        line-height: 40px;
+      }
+
+      .why-choose-us-features .why-feature-item .why-feature-header .why-feature-title {
+        font-size: 22px;
+      }
+    }
+  }
+}

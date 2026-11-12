@@ -12,6 +12,25 @@
   --font-mono: var(--font-geist-mono);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Buttons that are now anchors keep the look of the original <button> */
+a.btn-primary,
+a.btn-outline,
+a.btn-text,
+a.nav-item {
+  text-decoration: none;
+  display: inline-block;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);

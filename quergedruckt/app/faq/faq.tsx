@@ -1,114 +1,73 @@
+"use client";
+
 import './faq.scss';
 import Image from 'next/image';
+import { useState } from 'react';
+import { useTranslation } from '../i18n/i18n';
+
+const ICON_OPEN = 'https://www.figma.com/api/mcp/asset/92878b1d-e5f5-49a8-9f00-5ea314170080';
+const ICON_CLOSED = 'https://www.figma.com/api/mcp/asset/9adbde46-3b54-4dd1-9ec5-9326cf9ee207';
+
+// Question and answer text lives in the locale files (faq.items.<id>).
+// TODO: the answers are still the placeholder copy from the Figma design.
+const FAQ_IDS = ['speed', 'materials', 'largeParts', 'resale', 'designHelp', 'shipping'];
 
 const FAQ = () => {
+  const { t } = useTranslation();
+  // The first item starts open, as in the design. Set to null to start all closed.
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
+
+  const toggle = (index: number) =>
+    setOpenIndex((current) => (current === index ? null : index));
+
   return (
-    <div className="faq">
+    <div className="faq" id="faq">
       <div className="faq-content">
         <div className="faq-text">
           <div className="faq-header">
-            <h2 className="faq-title">Frequently Asked Questions</h2>
+            <h2 className="faq-title">{t('faq.title')}</h2>
             <p className="faq-description">
-              Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship.
+              {t('faq.description')}
             </p>
           </div>
-          <button className="btn-primary">Contact Us</button>
+          <a className="btn-primary" href="#contact">{t('faq.contactUs')}</a>
         </div>
         <div className="faq-items">
-          <div className="faq-item expanded">
-            <div className="faq-question-wrapper">
-              <div className="faq-question-content">
-                <h3 className="faq-question">How fast is production?</h3>
-                <p className="faq-answer">
-                  Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship.
-                </p>
+          {FAQ_IDS.map((id, index) => {
+            const isOpen = openIndex === index;
+            return (
+              <div className={`faq-item${isOpen ? ' expanded' : ''}`} key={id}>
+                <div
+                  className="faq-question-wrapper"
+                  role="button"
+                  tabIndex={0}
+                  aria-expanded={isOpen}
+                  style={{ cursor: 'pointer' }}
+                  onClick={() => toggle(index)}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      e.preventDefault();
+                      toggle(index);
+                    }
+                  }}
+                >
+                  <div className="faq-question-content">
+                    <h3 className="faq-question">{t(`faq.items.${id}.question`)}</h3>
+                    {isOpen && <p className="faq-answer">{t(`faq.items.${id}.answer`)}</p>}
+                  </div>
+                  <div className="faq-icon">
+                    <Image
+                      src={isOpen ? ICON_OPEN : ICON_CLOSED}
+                      alt=""
+                      width={24}
+                      height={24}
+                      className={isOpen ? 'faq-arrow' : undefined}
+                    />
+                  </div>
+                </div>
               </div>
-              <div className="faq-icon">
-                <Image 
-                  src="https://www.figma.com/api/mcp/asset/92878b1d-e5f5-49a8-9f00-5ea314170080" 
-                  alt="" 
-                  width={24} 
-                  height={24}
-                  className="faq-arrow"
-                />
-              </div>
-            </div>
-          </div>
-          <div className="faq-item">
-            <div className="faq-question-wrapper">
-              <div className="faq-question-content">
-                <h3 className="faq-question">What materials do you offer?</h3>
-              </div>
-              <div className="faq-icon">
-                <Image 
-                  src="https://www.figma.com/api/mcp/asset/9adbde46-3b54-4dd1-9ec5-9326cf9ee207" 
-                  alt="" 
-                  width={24} 
-                  height={24}
-                />
-              </div>
-            </div>
-          </div>
-          <div className="faq-item">
-            <div className="faq-question-wrapper">
-              <div className="faq-question-content">
-                <h3 className="faq-question">Can you print large parts?</h3>
-              </div>
-              <div className="faq-icon">
-                <Image 
-                  src="https://www.figma.com/api/mcp/asset/9adbde46-3b54-4dd1-9ec5-9326cf9ee207" 
-                  alt="" 
-                  width={24} 
-                  height={24}
-                />
-              </div>
-            </div>
-          </div>
-          <div className="faq-item">
-            <div className="faq-question-wrapper">
-              <div className="faq-question-content">
-                <h3 className="faq-question">What about resale value?</h3>
-              </div>
-              <div className="faq-icon">
-                <Image 
-                  src="https://www.figma.com/api/mcp/asset/9adbde46-3b54-4dd1-9ec5-9326cf9ee207" 
-                  alt="" 
-                  width={24} 
-                  height={24}
-                />
-              </div>
-            </div>
-          </div>
-          <div className="faq-item">
-            <div className="faq-question-wrapper">
-              <div className="faq-question-content">
-                <h3 className="faq-question">Do you provide design help?</h3>
-              </div>
-              <div className="faq-icon">
-                <Image 
-                  src="https://www.figma.com/api/mcp/asset/9adbde46-3b54-4dd1-9ec5-9326cf9ee207" 
-                  alt="" 
-                  width={24} 
-                  height={24}
-                />
-              </div>
-            </div>
-          </div>
-          <div className="faq-item">
-            <div className="faq-question-wrapper">
-              <div className="faq-question-content">
-                <h3 className="faq-question">Is shipping available worldwide?</h3>
-              </div>
-              <div className="faq-icon">
-                <Image 
-                  src="https://www.figma.com/api/mcp/asset/9adbde46-3b54-4dd1-9ec5-9326cf9ee207" 
-                  alt="" 
-                  width={24} 
-                  height={24}
-                />
-              </div>
-            </div>
-          </div>
+            );
+          })}
         </div>
       </div>
     </div>
@@ -116,4 +75,3 @@ const FAQ = () => {
 }
 
 export default FAQ;
-

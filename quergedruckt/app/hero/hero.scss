@@ -3,7 +3,7 @@
 .hero {
   position: relative;
   width: 100%;
-  height: 786px;
+  min-height: 786px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -32,7 +32,6 @@
     display: flex;
     flex-direction: column;
     gap: 498px;
-    height: 100%;
   }
 
   .hero-header {
@@ -169,3 +168,104 @@
   }
 }
 
+.hero {
+  .hero-header .hero-actions .hero-menu-toggle {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    color: $white;
+    cursor: pointer;
+
+    &:focus-visible {
+      outline: 2px solid $primary-orange;
+      outline-offset: 2px;
+    }
+  }
+
+  @include tablet {
+    min-height: 640px;
+    padding: 30px 40px 64px;
+
+    .hero-content {
+      gap: 120px;
+    }
+
+    .hero-header {
+      position: relative;
+
+      .hero-navigation {
+        display: none;
+        position: absolute;
+        top: calc(100% + 12px);
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        padding: 20px 24px;
+        background: #0a0400;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 12px;
+        z-index: 5;
+
+        &.open {
+          display: flex;
+        }
+      }
+
+      .hero-actions {
+        gap: 12px;
+
+        .hero-menu-toggle {
+          display: flex;
+        }
+      }
+    }
+
+    .hero-main {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 32px;
+
+      .hero-text .hero-title {
+        white-space: normal;
+        font-size: 44px;
+        line-height: 1.15;
+      }
+
+      .hero-description {
+        width: 100%;
+        max-width: 384px;
+      }
+    }
+  }
+
+  @include phone {
+    padding: 20px 20px 48px;
+
+    .hero-content {
+      gap: 80px;
+    }
+
+    .hero-header {
+      .hero-logo {
+        width: 150px;
+        height: auto;
+      }
+
+      .hero-actions .btn-primary {
+        display: none;
+      }
+    }
+
+    .hero-main .hero-text .hero-title {
+      font-size: 34px;
+    }
+  }
+}

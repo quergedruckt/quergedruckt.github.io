@@ -1,0 +1,70 @@
+@import '../styles/variables.scss';
+
+.language-select {
+  position: relative;
+
+  .language-select-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 8px;
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+    color: $white;
+    cursor: pointer;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+
+    &:focus-visible {
+      outline: 2px solid $primary-orange;
+      outline-offset: 2px;
+    }
+  }
+
+  .language-select-flag {
+    font-size: 24px;
+    line-height: 1;
+  }
+
+  .language-select-menu {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    z-index: 20;
+    min-width: 150px;
+    margin: 0;
+    padding: 4px;
+    list-style: none;
+    background: $primary-dark-orange;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+  }
+
+  .language-select-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 8px 10px;
+    background: transparent;
+    border: none;
+    border-radius: 6px;
+    color: $white;
+    cursor: pointer;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 16px;
+    text-align: left;
+
+    &:hover,
+    &:focus-visible {
+      background: rgba(255, 255, 255, 0.1);
+      outline: none;
+    }
+
+    &.selected {
+      color: $primary-orange;
+    }
+  }
+}

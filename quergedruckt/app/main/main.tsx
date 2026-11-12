@@ -1,4 +1,3 @@
-import Image from "next/image";
 import '../main/main.scss'
 import AboutUs from "../about-us/aboutUs";
 

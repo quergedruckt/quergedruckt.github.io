@@ -14,7 +14,7 @@
     "contact": "Contact",
     "services": "Services",
     "gallery": "Gallery",
-    "faqs": "Faqs",
+    "faqs": "FAQ",
     "menu": "Menu"
   },
   "language": {
@@ -25,178 +25,165 @@
   "hero": {
     "titleLine1": "Get the benefits of",
     "titleLine2": "3D printing",
-    "description": "Custom 3D Printing, Prototyping, and Design Services for Innovators, Makers, and Businesses."
+    "description": "Custom 3D printing, prototyping and design for innovators, makers and businesses."
   },
   "about": {
     "label": "About Us",
-    "title": "Shaping Tomorrow with Precision",
-    "description": "We craft powerful ideas into sleek digital journeys that inspire action, connect with users, and elevate brands globally",
+    "title": "From idea to finished part",
+    "description": "quergedruckt turns digital designs into physical parts. We design, prototype and print, and we can scan an existing part when there is no drawing to work from. One idea or a small series, it all starts with a conversation about what you need.",
     "features": {
-      "insight": "Insight-led creativity",
-      "scalable": "Scalable impact",
-      "audience": "Audience-centric thinking",
-      "strategy": "Strategy meets storytelling"
+      "insight": "One contact from sketch to part",
+      "scalable": "Single prototypes and series parts",
+      "audience": "Scanning for parts without drawings",
+      "strategy": "Plain advice, no jargon"
     }
   },
   "services": {
     "label": "Our Services",
-    "title": "Custom 3D solutions for every need",
+    "title": "3D solutions built around your project",
     "items": {
       "prototyping": {
         "title": "Rapid Prototyping",
-        "description": "Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship."
+        "description": "Hold your idea in your hands before you commit to it. Printed prototypes let you check shape, fit and function early, and change them quickly when something needs to be different."
       },
       "design": {
         "title": "Design & Engineering",
-        "description": "Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship."
+        "description": "No model yet? We can draw it. We design and adjust parts so they work in the real world and print well, whether you start from a sketch or an existing drawing."
       },
       "printing": {
         "title": "Custom 3D Printing",
-        "description": "Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship."
+        "description": "Send us your file and we print it. One-off pieces and small batches, made in exactly the shape you need."
       },
       "scanning": {
         "title": "3D Scanning",
-        "description": "Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship."
+        "description": "We capture a physical object as a digital 3D model. That makes it possible to copy, repair or adapt something that so far only exists on your workbench."
       },
       "production": {
         "title": "Production Parts",
-        "description": "Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship."
+        "description": "For parts that end up in real use, printing is often the more practical route in small quantities, because it needs no tooling. We are happy to talk through whether it makes sense for yours."
       },
       "reverse": {
         "title": "Reverse Engineering",
-        "description": "Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship."
+        "description": "A part is broken, no longer made or was never documented. We scan it, rebuild the model and work out how to make it again."
       }
     }
   },
   "why": {
     "label": "Why Choose Us",
-    "title": "Trusted by Global Innovators",
+    "title": "A partner who thinks along",
     "items": {
       "tech": {
-        "title": "Advanced Tech",
-        "description": "Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship."
+        "title": "Design and printing together",
+        "description": "Because we handle both the modelling and the printing, problems get solved in the design instead of at the printer. That spares you a few rounds of back and forth."
       },
       "quality": {
-        "title": "Quality Checks",
-        "description": "Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship."
+        "title": "Honest advice",
+        "description": "If a part will not print well as drawn, we say so and suggest a better way. Better to hear it before printing than after."
       },
       "eco": {
-        "title": "Eco Practices",
-        "description": "Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship."
+        "title": "One piece or many",
+        "description": "A single prototype is as welcome as a small series. We plan each job around what the part has to do."
       }
     }
   },
   "projects": {
     "label": "Our Projects",
-    "title": "High-quality 3D projects for all",
+    "title": "A look at what we make",
     "items": {
       "filament": {
         "title": "Custom 3d printed filament",
-        "description": "Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship."
+        "description": "Filament is the raw material of every print. Choosing and handling it with care is where good results start."
       },
       "architecture": {
         "title": "Architectural Building Model",
-        "description": "Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship."
+        "description": "A scale model lets people judge a building long before it exists. Printing captures facades, roof lines and fine details."
       },
       "rcCar": {
-        "title": "Rc Car 3d Printed",
-        "description": "Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship."
+        "title": "3D-Printed RC Car",
+        "description": "Many parts of a model car can be printed, from the body to small mechanical pieces. A good test of how well design and printing work together."
       },
       "trophy": {
         "title": "Champion Trophy Design",
-        "description": "Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship."
+        "description": "A trophy can take almost any shape. Printing lets you design a true one-off instead of choosing from a catalogue."
       }
     }
   },
   "how": {
     "label": "How It Works",
-    "title": "Turning Ideas into Reality Faster",
+    "title": "From idea to part in three steps",
     "steps": {
       "design": {
-        "title": "Design Your Model",
-        "description": "Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship."
+        "title": "Tell us your idea",
+        "description": "Send a sketch, a drawing or a 3D file, or simply describe what you have in mind. We talk it through and work out what is needed."
       },
       "printing": {
-        "title": "Precision 3D Printing",
-        "description": "Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship."
+        "title": "We print it",
+        "description": "Once the model is ready, we print it. If something needs adjusting, we tell you."
       },
       "delivery": {
-        "title": "Secure Fast Delivery",
-        "description": "Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship."
+        "title": "Get your parts",
+        "description": "We agree with you in advance how and when the parts reach you."
       }
     }
   },
   "testimonials": {
-    "title": "Our Happy Clients Says",
-    "description": "Discover how Haven has transformed ordinary spaces into extraordinary living experiences, creating timeless interiors that clients cherish and proudly recommend.",
-    "items": {
-      "annette": {
-        "role": "Web Designer",
-        "text": "Vestibulum eu quam nec neque pellentesque efficitur id eget nisl. Proin porta est convallis lacus bl"
-      },
-      "darlene": {
-        "role": "Marketing Coordinator",
-        "text": "Donec sed erat ut magna suscipit mattis. Aliquam erat volutpat. Morbi in orci risus. Donec pretium f"
-      },
-      "jerome": {
-        "role": "Dog Trainer",
-        "text": "Aliquam porta nisl dolor, molestie pellentesque elit molestie in. Morbi metus neque, elementum ullam"
-      }
-    },
+    "title": "What our clients say",
+    "description": "Feedback from people we have worked with.",
+    "items": {},
     "previous": "Previous testimonials",
     "next": "Next testimonials"
   },
   "faq": {
     "title": "Frequently Asked Questions",
-    "description": "Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship.",
+    "description": "Short answers to common questions. If yours is not here, just ask us.",
     "contactUs": "Contact Us",
     "items": {
       "speed": {
         "question": "How fast is production?",
-        "answer": "Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship."
+        "answer": "That depends on the size of the part, the material and how many you need. Tell us what you have in mind and we will give you a realistic timeframe."
       },
       "materials": {
         "question": "What materials do you offer?",
-        "answer": "Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship."
+        "answer": "The right material depends on what the part has to do: carry load, withstand heat, look good, or all three. Tell us the purpose and we will recommend something that fits."
       },
       "largeParts": {
         "question": "Can you print large parts?",
-        "answer": "Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship."
+        "answer": "It depends on the part. Send us the dimensions and we will tell you what is possible."
       },
-      "resale": {
-        "question": "What about resale value?",
-        "answer": "Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship."
+      "noFile": {
+        "question": "Do I need a 3D file?",
+        "answer": "No. If you have a sketch, a drawing or only the physical part, we can work from that. We draw or scan the 3D model for you."
       },
       "designHelp": {
         "question": "Do you provide design help?",
-        "answer": "Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship."
+        "answer": "Yes. We design and adjust parts for printing, from a first sketch to a print-ready model."
       },
       "shipping": {
-        "question": "Is shipping available worldwide?",
-        "answer": "Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship."
+        "question": "Where do you deliver?",
+        "answer": "For now, we deliver within Germany only. We agree on how and when your parts reach you for every order. Need them shipped to another country? Send us an inquiry and we will let you know what is possible."
       }
     }
   },
   "contact": {
     "badge": "Contact Us",
-    "title": "Let's enhance your excellent enterprise with an amazing website",
-    "description": "For every prosperous enterprise, a proficient website is necessary, and I'm the expert for it. Contact me now, let's kick-start!",
-    "socialLabel": "Also you can find me here:",
+    "title": "Tell us what you want to make",
+    "description": "Send us a message with your idea, a sketch or a file. We read everything carefully, ask what we need to know and get back to you with a quote or the next step.",
+    "socialLabel": "You can also find us here:",
     "form": {
       "firstName": "First name",
       "lastName": "Last name",
       "email": "Email",
       "emailPlaceholder": "you@email.com",
       "phone": "Phone number",
-      "phonePlaceholder": "+1 (555) 000-0000",
+      "phonePlaceholder": "+49 123 4567890",
       "message": "Message",
-      "messagePlaceholder": "Leave us a message...",
-      "consentPrefix": "You agree to our friendly ",
-      "privacyPolicy": "Privacy policy",
+      "messagePlaceholder": "Tell us about your project...",
+      "consentPrefix": "I agree to the ",
+      "privacyPolicy": "Privacy Policy",
       "consentSuffix": ".",
-      "submit": "Submit",
+      "submit": "Send message",
       "sending": "Sending...",
-      "success": "Thank you! Your message has been sent.",
+      "success": "Thank you, your message has been sent. We will be in touch.",
       "error": "Something went wrong. Please try again later.",
       "errorRequired": "Please fill in all required fields.",
       "errorEmail": "Please enter a valid email address.",
@@ -252,19 +239,19 @@
         },
         "hosting": {
           "title": "Hosting",
-          "body": "This website is hosted on GitHub Pages. [Describe which data is processed when the site is visited, such as the IP address, the provider and the legal basis.]"
+          "body": "This website is hosted on GitHub Pages. When you visit it, the hosting provider processes technical access data such as your IP address, the date and time of the request and the pages you open. This is necessary to deliver the site and keep it secure. The legal basis is our legitimate interest under Art. 6(1)(f) GDPR."
         },
         "contactForm": {
           "title": "Contact form",
-          "body": "Messages sent through the contact form are forwarded by Formspree to [recipient email address]. [Describe the data collected (name, email, phone number, message), the purpose, the provider, the retention period and the legal basis.]"
+          "body": "If you use the contact form, we process the name, email address, phone number (optional) and message you enter, along with the language selected on the site. We use this data only to answer your enquiry. The form is operated by Formspree, which forwards your message to [recipient email address]. The legal basis is Art. 6(1)(b) GDPR for enquiries about a contract and otherwise our legitimate interest under Art. 6(1)(f) GDPR. We delete your data once your request has been dealt with, unless legal retention duties apply. [State the exact retention period and check whether data is transferred outside the EU.]"
         },
         "language": {
           "title": "Language preference",
-          "body": "The selected language is stored in the browser (local storage) so that it is remembered on the next visit. [Confirm whether this requires consent in your setup.]"
+          "body": "The language you choose is saved in your browser (local storage) so the site remembers it on your next visit. The setting stays on your device and is not sent to us."
         },
         "rights": {
           "title": "Rights of data subjects",
-          "body": "[List the rights to access, rectification, erasure, restriction of processing, data portability and objection, and the right to lodge a complaint with a supervisory authority.]"
+          "body": "You have the right to access your data, to have it corrected or deleted, to restrict its processing, to receive it in a portable format and to object to its processing. You can also lodge a complaint with a data protection supervisory authority. To exercise your rights, contact us using the details above."
         }
       }
     }

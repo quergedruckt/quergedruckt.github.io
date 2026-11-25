@@ -25,163 +25,150 @@
   "hero": {
     "titleLine1": "Entdecke die Vorteile",
     "titleLine2": "des 3D-Drucks",
-    "description": "Individueller 3D-Druck, Prototyping und Design-Services für Innovatoren, Maker und Unternehmen."
+    "description": "Individueller 3D-Druck, Prototyping und Design für Innovatoren, Maker und Unternehmen."
   },
   "about": {
     "label": "Über uns",
-    "title": "Die Zukunft mit Präzision gestalten",
-    "description": "Wir verwandeln starke Ideen in elegante digitale Erlebnisse, die zum Handeln inspirieren, Nutzer erreichen und Marken weltweit stärken",
+    "title": "Von der Idee zum fertigen Teil",
+    "description": "quergedruckt macht aus digitalen Entwürfen echte Bauteile. Wir konstruieren, bauen Prototypen und drucken. Gibt es keine Zeichnung, scannen wir das vorhandene Teil. Ob einzelnes Muster oder Kleinserie: Am Anfang steht ein Gespräch darüber, was du brauchst.",
     "features": {
-      "insight": "Kreativität mit Weitblick",
-      "scalable": "Skalierbare Wirkung",
-      "audience": "Zielgruppenorientiertes Denken",
-      "strategy": "Strategie trifft Storytelling"
+      "insight": "Ein Ansprechpartner von der Skizze bis zum Teil",
+      "scalable": "Einzelne Prototypen und Serienteile",
+      "audience": "Scannen, wenn keine Zeichnung existiert",
+      "strategy": "Klare Beratung ohne Fachchinesisch"
     }
   },
   "services": {
     "label": "Unsere Leistungen",
-    "title": "Individuelle 3D-Lösungen für jeden Bedarf",
+    "title": "3D-Lösungen, die zu deinem Projekt passen",
     "items": {
       "prototyping": {
         "title": "Rapid Prototyping",
-        "description": "Aus Leidenschaft für Technologie und Design gegründet, steht quergedruckt für kreative Problemlösungen und präzises Handwerk."
+        "description": "Halte deine Idee in den Händen, bevor du dich festlegst. An gedruckten Prototypen prüfst du Form, Passung und Funktion früh und änderst sie schnell, wenn etwas anders sein muss."
       },
       "design": {
         "title": "Design & Konstruktion",
-        "description": "Aus Leidenschaft für Technologie und Design gegründet, steht quergedruckt für kreative Problemlösungen und präzises Handwerk."
+        "description": "Noch kein Modell? Wir zeichnen es. Wir konstruieren und überarbeiten Teile so, dass sie in der Praxis funktionieren und sich gut drucken lassen, ob du mit einer Skizze oder einer vorhandenen Zeichnung startest."
       },
       "printing": {
         "title": "Individueller 3D-Druck",
-        "description": "Aus Leidenschaft für Technologie und Design gegründet, steht quergedruckt für kreative Problemlösungen und präzises Handwerk."
+        "description": "Schick uns deine Datei, wir drucken sie. Einzelstücke und kleine Stückzahlen, in genau der Form, die du brauchst."
       },
       "scanning": {
         "title": "3D-Scanning",
-        "description": "Aus Leidenschaft für Technologie und Design gegründet, steht quergedruckt für kreative Problemlösungen und präzises Handwerk."
+        "description": "Wir erfassen ein reales Objekt als digitales 3D-Modell. So lässt sich etwas kopieren, reparieren oder anpassen, das bisher nur auf deiner Werkbank existiert."
       },
       "production": {
         "title": "Serienteile",
-        "description": "Aus Leidenschaft für Technologie und Design gegründet, steht quergedruckt für kreative Problemlösungen und präzises Handwerk."
+        "description": "Für Bauteile, die später im Einsatz sind, ist der 3D-Druck in kleinen Stückzahlen oft der praktischere Weg, denn er kommt ohne Werkzeug aus. Ob das für dein Teil passt, klären wir gern gemeinsam."
       },
       "reverse": {
         "title": "Reverse Engineering",
-        "description": "Aus Leidenschaft für Technologie und Design gegründet, steht quergedruckt für kreative Problemlösungen und präzises Handwerk."
+        "description": "Ein Teil ist kaputt, wird nicht mehr hergestellt oder wurde nie dokumentiert. Wir scannen es, bauen das Modell neu auf und klären, wie sich das Teil wieder fertigen lässt."
       }
     }
   },
   "why": {
     "label": "Warum wir",
-    "title": "Das Vertrauen globaler Innovatoren",
+    "title": "Ein Partner, der mitdenkt",
     "items": {
       "tech": {
-        "title": "Moderne Technik",
-        "description": "Aus Leidenschaft für Technologie und Design gegründet, steht quergedruckt für kreative Problemlösungen und präzises Handwerk."
+        "title": "Konstruktion und Druck aus einer Hand",
+        "description": "Weil wir modellieren und drucken, lösen wir Probleme im Entwurf statt am Drucker. Das erspart dir manche Abstimmungsrunde."
       },
       "quality": {
-        "title": "Qualitätskontrolle",
-        "description": "Aus Leidenschaft für Technologie und Design gegründet, steht quergedruckt für kreative Problemlösungen und präzises Handwerk."
+        "title": "Ehrliche Beratung",
+        "description": "Lässt sich ein Teil so wie gezeichnet nicht gut drucken, sagen wir das und schlagen eine bessere Lösung vor. Lieber vor dem Druck als danach."
       },
       "eco": {
-        "title": "Nachhaltige Praxis",
-        "description": "Aus Leidenschaft für Technologie und Design gegründet, steht quergedruckt für kreative Problemlösungen und präzises Handwerk."
+        "title": "Ein Teil oder viele",
+        "description": "Ein einzelner Prototyp ist uns genauso willkommen wie eine Kleinserie. Wir planen jeden Auftrag danach, was das Teil leisten muss."
       }
     }
   },
   "projects": {
     "label": "Unsere Projekte",
-    "title": "Hochwertige 3D-Projekte für alle",
+    "title": "Ein Blick auf unsere Arbeiten",
     "items": {
       "filament": {
         "title": "Individuell 3D-gedrucktes Filament",
-        "description": "Aus Leidenschaft für Technologie und Design gegründet, steht quergedruckt für kreative Problemlösungen und präzises Handwerk."
+        "description": "Filament ist das Ausgangsmaterial jedes Drucks. Wer es sorgfältig auswählt und verarbeitet, legt die Basis für gute Ergebnisse."
       },
       "architecture": {
         "title": "Architektonisches Gebäudemodell",
-        "description": "Aus Leidenschaft für Technologie und Design gegründet, steht quergedruckt für kreative Problemlösungen und präzises Handwerk."
+        "description": "Ein Maßstabsmodell lässt ein Gebäude beurteilen, lange bevor es steht. Im Druck entstehen Fassaden, Dachformen und feine Details."
       },
       "rcCar": {
         "title": "3D-gedrucktes RC-Auto",
-        "description": "Aus Leidenschaft für Technologie und Design gegründet, steht quergedruckt für kreative Problemlösungen und präzises Handwerk."
+        "description": "Bei einem Modellauto lässt sich vieles drucken, von der Karosserie bis zu kleinen mechanischen Teilen. Ein guter Test dafür, wie gut Konstruktion und Druck zusammenspielen."
       },
       "trophy": {
         "title": "Design einer Meisterschaftstrophäe",
-        "description": "Aus Leidenschaft für Technologie und Design gegründet, steht quergedruckt für kreative Problemlösungen und präzises Handwerk."
+        "description": "Eine Trophäe kann fast jede Form haben. Mit dem 3D-Druck entsteht ein echtes Unikat, statt etwas aus dem Katalog auszuwählen."
       }
     }
   },
   "how": {
     "label": "So funktioniert's",
-    "title": "Ideen schneller Wirklichkeit werden lassen",
+    "title": "In drei Schritten von der Idee zum Teil",
     "steps": {
       "design": {
-        "title": "Modell entwerfen",
-        "description": "Aus Leidenschaft für Technologie und Design gegründet, steht quergedruckt für kreative Problemlösungen und präzises Handwerk."
+        "title": "Erzähl uns deine Idee",
+        "description": "Schick uns eine Skizze, eine Zeichnung oder eine 3D-Datei, oder beschreib einfach, was du vorhast. Wir besprechen alles und klären, was nötig ist."
       },
       "printing": {
-        "title": "Präzisions-3D-Druck",
-        "description": "Aus Leidenschaft für Technologie und Design gegründet, steht quergedruckt für kreative Problemlösungen und präzises Handwerk."
+        "title": "Wir drucken es",
+        "description": "Sobald das Modell steht, drucken wir es. Muss etwas angepasst werden, sagen wir Bescheid."
       },
       "delivery": {
-        "title": "Sichere, schnelle Lieferung",
-        "description": "Aus Leidenschaft für Technologie und Design gegründet, steht quergedruckt für kreative Problemlösungen und präzises Handwerk."
+        "title": "Deine Teile kommen an",
+        "description": "Wie und wann die Teile bei dir ankommen, besprechen wir vorab mit dir."
       }
     }
   },
   "testimonials": {
-    "title": "Das sagen unsere zufriedenen Kunden",
-    "description": "So hat Haven gewöhnliche Räume in außergewöhnliche Wohnerlebnisse verwandelt: zeitlose Interieurs, die Kunden schätzen und gern weiterempfehlen.",
-    "items": {
-      "annette": {
-        "role": "Webdesign",
-        "text": "Vestibulum eu quam nec neque pellentesque efficitur id eget nisl. Proin porta est convallis lacus bl"
-      },
-      "darlene": {
-        "role": "Marketing-Koordination",
-        "text": "Donec sed erat ut magna suscipit mattis. Aliquam erat volutpat. Morbi in orci risus. Donec pretium f"
-      },
-      "jerome": {
-        "role": "Hundetraining",
-        "text": "Aliquam porta nisl dolor, molestie pellentesque elit molestie in. Morbi metus neque, elementum ullam"
-      }
-    },
+    "title": "Das sagen unsere Kunden",
+    "description": "Rückmeldungen von Menschen, mit denen wir zusammengearbeitet haben.",
+    "items": {},
     "previous": "Vorherige Bewertungen",
     "next": "Nächste Bewertungen"
   },
   "faq": {
     "title": "Häufig gestellte Fragen",
-    "description": "Aus Leidenschaft für Technologie und Design gegründet, steht quergedruckt für kreative Problemlösungen und präzises Handwerk.",
+    "description": "Kurze Antworten auf häufige Fragen. Fehlt deine, frag uns einfach.",
     "contactUs": "Kontakt aufnehmen",
     "items": {
       "speed": {
         "question": "Wie schnell erfolgt die Produktion?",
-        "answer": "Aus Leidenschaft für Technologie und Design gegründet, steht quergedruckt für kreative Problemlösungen und präzises Handwerk."
+        "answer": "Das hängt von Größe, Material und Stückzahl ab. Sag uns, was du vorhast, dann nennen wir dir einen realistischen Zeitrahmen."
       },
       "materials": {
         "question": "Welche Materialien gibt es?",
-        "answer": "Aus Leidenschaft für Technologie und Design gegründet, steht quergedruckt für kreative Problemlösungen und präzises Handwerk."
+        "answer": "Welches Material passt, hängt vom Einsatz ab: Soll das Teil tragen, Hitze aushalten, gut aussehen oder alles zusammen? Nenn uns den Zweck, dann empfehlen wir etwas Passendes."
       },
       "largeParts": {
         "question": "Können auch große Teile gedruckt werden?",
-        "answer": "Aus Leidenschaft für Technologie und Design gegründet, steht quergedruckt für kreative Problemlösungen und präzises Handwerk."
+        "answer": "Das hängt vom Teil ab. Schick uns die Maße, dann sagen wir dir, was möglich ist."
       },
-      "resale": {
-        "question": "Wie sieht es mit dem Wiederverkaufswert aus?",
-        "answer": "Aus Leidenschaft für Technologie und Design gegründet, steht quergedruckt für kreative Problemlösungen und präzises Handwerk."
+      "noFile": {
+        "question": "Brauche ich eine 3D-Datei?",
+        "answer": "Nein. Hast du eine Skizze, eine Zeichnung oder nur das reale Teil, arbeiten wir damit. Das 3D-Modell zeichnen oder scannen wir für dich."
       },
       "designHelp": {
         "question": "Gibt es Unterstützung beim Design?",
-        "answer": "Aus Leidenschaft für Technologie und Design gegründet, steht quergedruckt für kreative Problemlösungen und präzises Handwerk."
+        "answer": "Ja. Wir konstruieren und überarbeiten Teile für den Druck, von der ersten Skizze bis zum druckfertigen Modell."
       },
       "shipping": {
-        "question": "Ist weltweiter Versand möglich?",
-        "answer": "Aus Leidenschaft für Technologie und Design gegründet, steht quergedruckt für kreative Problemlösungen und präzises Handwerk."
+        "question": "Wohin liefert ihr?",
+        "answer": "Standardmäßig liefern wir innerhalb Deutschlands. Wie und wann deine Teile bei dir ankommen, stimmen wir bei jedem Auftrag mit dir ab. Soll es in ein anderes Land gehen? Schick uns eine Anfrage, dann sagen wir dir, was möglich ist."
       }
     }
   },
   "contact": {
     "badge": "Kontakt",
-    "title": "Bringen wir ein starkes Unternehmen mit einer großartigen Website auf das nächste Level",
-    "description": "Jedes erfolgreiche Unternehmen braucht eine professionelle Website. Jetzt Kontakt aufnehmen und loslegen!",
-    "socialLabel": "Auch hier zu finden:",
+    "title": "Erzähl uns, was du herstellen möchtest",
+    "description": "Schick uns eine Nachricht mit deiner Idee, einer Skizze oder einer Datei. Wir lesen alles in Ruhe, fragen nach, was wir wissen müssen, und melden uns mit einem Angebot oder dem nächsten Schritt.",
+    "socialLabel": "Du findest uns auch hier:",
     "form": {
       "firstName": "Vorname",
       "lastName": "Nachname",
@@ -190,13 +177,13 @@
       "phone": "Telefonnummer",
       "phonePlaceholder": "+49 123 4567890",
       "message": "Nachricht",
-      "messagePlaceholder": "Nachricht hinterlassen...",
+      "messagePlaceholder": "Erzähl uns von deinem Projekt...",
       "consentPrefix": "Ich stimme der ",
       "privacyPolicy": "Datenschutzerklärung",
       "consentSuffix": " zu.",
-      "submit": "Absenden",
+      "submit": "Nachricht senden",
       "sending": "Wird gesendet...",
-      "success": "Vielen Dank! Die Nachricht wurde gesendet.",
+      "success": "Vielen Dank, deine Nachricht ist angekommen. Wir melden uns bei dir.",
       "error": "Etwas ist schiefgelaufen. Bitte später erneut versuchen.",
       "errorRequired": "Bitte alle Pflichtfelder ausfüllen.",
       "errorEmail": "Bitte eine gültige E-Mail-Adresse eingeben.",
@@ -252,19 +239,19 @@
         },
         "hosting": {
           "title": "Hosting",
-          "body": "Diese Website wird über GitHub Pages bereitgestellt. [Beschreiben, welche Daten beim Aufruf der Seite verarbeitet werden, etwa die IP-Adresse, sowie Anbieter und Rechtsgrundlage.]"
+          "body": "Diese Website wird über GitHub Pages bereitgestellt. Beim Aufruf verarbeitet der Hosting-Anbieter technische Zugriffsdaten wie deine IP-Adresse, Datum und Uhrzeit der Anfrage und die aufgerufenen Seiten. Das ist nötig, um die Seite auszuliefern und sicher zu betreiben. Rechtsgrundlage ist unser berechtigtes Interesse nach Art. 6 Abs. 1 lit. f DSGVO."
         },
         "contactForm": {
           "title": "Kontaktformular",
-          "body": "Nachrichten über das Kontaktformular werden von Formspree an [Empfänger-E-Mail-Adresse] weitergeleitet. [Beschreiben, welche Daten erhoben werden (Name, E-Mail, Telefonnummer, Nachricht), Zweck, Anbieter, Speicherdauer und Rechtsgrundlage.]"
+          "body": "Wenn du das Kontaktformular nutzt, verarbeiten wir den eingegebenen Namen, die E-Mail-Adresse, die Telefonnummer (freiwillig) und die Nachricht, außerdem die auf der Seite gewählte Sprache. Wir verwenden diese Daten ausschließlich, um deine Anfrage zu beantworten. Das Formular wird von Formspree betrieben, das deine Nachricht an [Empfänger-E-Mail-Adresse] weiterleitet. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO bei Anfragen zu einem Vertrag, sonst unser berechtigtes Interesse nach Art. 6 Abs. 1 lit. f DSGVO. Wir löschen deine Daten, sobald deine Anfrage erledigt ist, sofern keine gesetzlichen Aufbewahrungspflichten bestehen. [Genaue Speicherdauer angeben und prüfen, ob Daten außerhalb der EU übermittelt werden.]"
         },
         "language": {
           "title": "Spracheinstellung",
-          "body": "Die gewählte Sprache wird im Browser gespeichert (Local Storage), damit sie beim nächsten Besuch erhalten bleibt. [Prüfen, ob dafür eine Einwilligung erforderlich ist.]"
+          "body": "Die gewählte Sprache wird in deinem Browser gespeichert (Local Storage), damit die Seite sie beim nächsten Besuch wiedererkennt. Die Einstellung bleibt auf deinem Gerät und wird nicht an uns übertragen."
         },
         "rights": {
           "title": "Rechte der betroffenen Personen",
-          "body": "[Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch sowie das Beschwerderecht bei einer Aufsichtsbehörde auflisten.]"
+          "body": "Du hast das Recht auf Auskunft über deine Daten, auf Berichtigung und Löschung, auf Einschränkung der Verarbeitung, auf Datenübertragbarkeit und auf Widerspruch. Außerdem kannst du dich bei einer Datenschutz-Aufsichtsbehörde beschweren. Um deine Rechte geltend zu machen, melde dich über die oben genannten Kontaktdaten bei uns."
         }
       }
     }

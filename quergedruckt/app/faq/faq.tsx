@@ -9,8 +9,7 @@ const ICON_OPEN = 'https://www.figma.com/api/mcp/asset/92878b1d-e5f5-49a8-9f00-5
 const ICON_CLOSED = 'https://www.figma.com/api/mcp/asset/9adbde46-3b54-4dd1-9ec5-9326cf9ee207';
 
 // Question and answer text lives in the locale files (faq.items.<id>).
-// TODO: the answers are still the placeholder copy from the Figma design.
-const FAQ_IDS = ['speed', 'materials', 'largeParts', 'resale', 'designHelp', 'shipping'];
+const FAQ_IDS = ['speed', 'materials', 'largeParts', 'noFile', 'designHelp', 'shipping'];
 
 const FAQ = () => {
   const { t } = useTranslation();

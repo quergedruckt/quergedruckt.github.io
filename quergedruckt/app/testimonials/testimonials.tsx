@@ -19,17 +19,17 @@ const ARROW_DISABLED = 'https://www.figma.com/api/mcp/asset/16584371-a0c4-4475-b
 // To add a testimonial: add an entry here and matching `role` and `text` in both
 // locale files under testimonials.items.<id>. Names are not translated. The arrows
 // appear automatically once there are more than PAGE_SIZE entries.
-const TESTIMONIALS = [
-  { id: 'annette', name: 'Annette Black', avatar: 'https://www.figma.com/api/mcp/asset/31640cf4-8699-48b7-ad1c-bb366e6d5ce1' },
-  { id: 'darlene', name: 'Darlene Robertson', avatar: 'https://www.figma.com/api/mcp/asset/4930e330-97fa-4d93-9331-a2d0fd970976' },
-  { id: 'jerome', name: 'Jerome Bell', avatar: 'https://www.figma.com/api/mcp/asset/6578ae1f-7f00-4b61-bbfe-81f90cfa65c0' },
-];
+// The section stays hidden while this list is empty. Only add real feedback, with the
+// person's permission.
+const TESTIMONIALS: { id: string; name: string; avatar: string }[] = [];
 
 const PAGE_SIZE = 3;
 
 const Testimonials = () => {
   const { t } = useTranslation();
   const [page, setPage] = useState(0);
+
+  if (TESTIMONIALS.length === 0) return null;
 
   const pageCount = Math.ceil(TESTIMONIALS.length / PAGE_SIZE);
   const visibleTestimonials = TESTIMONIALS.slice(page * PAGE_SIZE, (page + 1) * PAGE_SIZE);

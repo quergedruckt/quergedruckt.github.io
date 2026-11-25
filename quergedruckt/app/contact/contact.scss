@@ -4,7 +4,7 @@
   background-color: $primary-dark-orange;
   display: flex;
   flex-direction: column;
-  height: 840px;
+  min-height: 840px;
   align-items: flex-start;
   padding: 120px 80px;
   width: 100%;
@@ -13,7 +13,7 @@
     background-color: #0a0400;
     display: flex;
     gap: 80px;
-    height: 600px;
+    min-height: 600px;
     align-items: flex-start;
     padding: 32px;
     border-radius: 24px;
@@ -25,7 +25,8 @@
       gap: 153px;
       height: 100%;
       align-items: flex-start;
-      width: 588px;
+      flex: 0 1 588px;
+      min-width: 0;
 
       .contact-header {
         display: flex;
@@ -278,7 +279,43 @@
               text-overflow: ellipsis;
               margin: 0;
             }
+
+            input,
+            textarea {
+              width: 100%;
+              background: transparent;
+              border: none;
+              outline: none;
+              padding: 0;
+              font-family: 'Urbanist', sans-serif;
+              font-weight: 300;
+              font-size: 14px;
+              line-height: 1.25;
+              color: $white;
+
+              &::placeholder {
+                color: #b3b3b3;
+              }
+            }
+
+            textarea {
+              flex: 1 0 0;
+              min-height: 0;
+              resize: none;
+            }
+
+            &:focus-within {
+              border-color: $primary-orange;
+            }
           }
+        }
+
+        .form-honeypot {
+          position: absolute;
+          left: -9999px;
+          width: 1px;
+          height: 1px;
+          opacity: 0;
         }
 
         .form-checkbox {
@@ -286,6 +323,16 @@
           gap: 12px;
           align-items: flex-start;
           width: 100%;
+          position: relative;
+          cursor: pointer;
+
+          .checkbox-input {
+            position: absolute;
+            opacity: 0;
+            width: 20px;
+            height: 20px;
+            margin: 0;
+          }
 
           .checkbox {
             border: 1px solid #d5d7da;
@@ -294,6 +341,29 @@
             height: 20px;
             flex-shrink: 0;
             margin-top: 2px;
+            position: relative;
+          }
+
+          .checkbox-input:checked + .checkbox {
+            background-color: $primary-orange;
+            border-color: $primary-orange;
+
+            &::after {
+              content: '';
+              position: absolute;
+              left: 6px;
+              top: 2px;
+              width: 5px;
+              height: 10px;
+              border: solid $white;
+              border-width: 0 2px 2px 0;
+              transform: rotate(45deg);
+            }
+          }
+
+          .checkbox-input:focus-visible + .checkbox {
+            outline: 2px solid $primary-orange;
+            outline-offset: 2px;
           }
 
           .checkbox-text {
@@ -313,28 +383,46 @@
           }
         }
 
+        .form-status {
+          width: 100%;
+          min-height: 24px;
+          margin: -12px 0;
+
+          p {
+            margin: 0;
+            font-family: 'Urbanist', sans-serif;
+            font-size: 16px;
+            line-height: 24px;
+            color: $white;
+
+            &.success {
+              color: #5dd28a;
+            }
+
+            &.error {
+              color: #ff6b6b;
+            }
+          }
+        }
+
         .btn-submit {
           height: 48px;
-          overflow: hidden;
-          position: relative;
           width: 538px;
+          max-width: 100%;
           background-color: $primary-orange;
           border: none;
           border-radius: 12px;
           cursor: pointer;
+          font-family: 'Urbanist', sans-serif;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          color: $white;
+          text-transform: uppercase;
 
-          &::before {
-            content: 'SUBMIT';
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            top: 14px;
-            font-family: 'Urbanist', sans-serif;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 24px;
-            color: $white;
-            text-transform: uppercase;
+          &:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
           }
         }
       }
@@ -342,3 +430,62 @@
   }
 }
 
+.contact {
+  @include tablet {
+    min-height: 0;
+    padding: 80px 40px;
+
+    .contact-card {
+      flex-direction: column;
+      gap: 40px;
+      min-height: 0;
+      padding: 24px;
+
+      .contact-info {
+        flex: none;
+        width: 100%;
+        height: auto;
+        gap: 32px;
+
+        .contact-header .contact-title-section .contact-title {
+          font-size: 32px;
+          line-height: 40px;
+        }
+
+        .contact-social .social-label {
+          width: 100%;
+        }
+      }
+
+      .contact-form-wrapper {
+        flex: none;
+        width: 100%;
+
+        .contact-form {
+          gap: 24px;
+
+          .form-row {
+            gap: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  @include phone {
+    padding: 56px 20px;
+
+    .contact-card {
+      padding: 20px;
+
+      .contact-form-wrapper .contact-form .form-row {
+        flex-direction: column;
+
+        .form-field {
+          flex: none;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

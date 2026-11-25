@@ -1,0 +1,259 @@
+{
+  "meta": {
+    "title": "quergedruckt | 3D Printing, Prototyping & Design",
+    "description": "Custom 3D printing, prototyping, and design services for innovators, makers, and businesses."
+  },
+  "common": {
+    "getAQuote": "Get a Quote",
+    "learnMore": "Learn More"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "model3d": "3D Model",
+    "contact": "Contact",
+    "services": "Services",
+    "gallery": "Gallery",
+    "faqs": "FAQ",
+    "menu": "Menu"
+  },
+  "language": {
+    "label": "Language",
+    "en": "English",
+    "de": "Deutsch"
+  },
+  "hero": {
+    "titleLine1": "Get the benefits of",
+    "titleLine2": "3D printing",
+    "description": "Custom 3D printing, prototyping and design for innovators, makers and businesses."
+  },
+  "about": {
+    "label": "About Us",
+    "title": "From idea to finished part",
+    "description": "quergedruckt turns digital designs into physical parts. We design, prototype and print, and we can scan an existing part when there is no drawing to work from. One idea or a small series, it all starts with a conversation about what you need.",
+    "features": {
+      "insight": "One contact from sketch to part",
+      "scalable": "Single prototypes and series parts",
+      "audience": "Scanning for parts without drawings",
+      "strategy": "Plain advice, no jargon"
+    }
+  },
+  "services": {
+    "label": "Our Services",
+    "title": "3D solutions built around your project",
+    "items": {
+      "prototyping": {
+        "title": "Rapid Prototyping",
+        "description": "Hold your idea in your hands before you commit to it. Printed prototypes let you check shape, fit and function early, and change them quickly when something needs to be different."
+      },
+      "design": {
+        "title": "Design & Engineering",
+        "description": "No model yet? We can draw it. We design and adjust parts so they work in the real world and print well, whether you start from a sketch or an existing drawing."
+      },
+      "printing": {
+        "title": "Custom 3D Printing",
+        "description": "Send us your file and we print it. One-off pieces and small batches, made in exactly the shape you need."
+      },
+      "scanning": {
+        "title": "3D Scanning",
+        "description": "We capture a physical object as a digital 3D model. That makes it possible to copy, repair or adapt something that so far only exists on your workbench."
+      },
+      "production": {
+        "title": "Production Parts",
+        "description": "For parts that end up in real use, printing is often the more practical route in small quantities, because it needs no tooling. We are happy to talk through whether it makes sense for yours."
+      },
+      "reverse": {
+        "title": "Reverse Engineering",
+        "description": "A part is broken, no longer made or was never documented. We scan it, rebuild the model and work out how to make it again."
+      }
+    }
+  },
+  "why": {
+    "label": "Why Choose Us",
+    "title": "A partner who thinks along",
+    "items": {
+      "tech": {
+        "title": "Design and printing together",
+        "description": "Because we handle both the modelling and the printing, problems get solved in the design instead of at the printer. That spares you a few rounds of back and forth."
+      },
+      "quality": {
+        "title": "Honest advice",
+        "description": "If a part will not print well as drawn, we say so and suggest a better way. Better to hear it before printing than after."
+      },
+      "eco": {
+        "title": "One piece or many",
+        "description": "A single prototype is as welcome as a small series. We plan each job around what the part has to do."
+      }
+    }
+  },
+  "projects": {
+    "label": "Our Projects",
+    "title": "A look at what we make",
+    "items": {
+      "filament": {
+        "title": "Custom 3d printed filament",
+        "description": "Filament is the raw material of every print. Choosing and handling it with care is where good results start."
+      },
+      "architecture": {
+        "title": "Architectural Building Model",
+        "description": "A scale model lets people judge a building long before it exists. Printing captures facades, roof lines and fine details."
+      },
+      "rcCar": {
+        "title": "3D-Printed RC Car",
+        "description": "Many parts of a model car can be printed, from the body to small mechanical pieces. A good test of how well design and printing work together."
+      },
+      "trophy": {
+        "title": "Champion Trophy Design",
+        "description": "A trophy can take almost any shape. Printing lets you design a true one-off instead of choosing from a catalogue."
+      }
+    }
+  },
+  "how": {
+    "label": "How It Works",
+    "title": "From idea to part in three steps",
+    "steps": {
+      "design": {
+        "title": "Tell us your idea",
+        "description": "Send a sketch, a drawing or a 3D file, or simply describe what you have in mind. We talk it through and work out what is needed."
+      },
+      "printing": {
+        "title": "We print it",
+        "description": "Once the model is ready, we print it. If something needs adjusting, we tell you."
+      },
+      "delivery": {
+        "title": "Get your parts",
+        "description": "We agree with you in advance how and when the parts reach you."
+      }
+    }
+  },
+  "testimonials": {
+    "title": "What our clients say",
+    "description": "Feedback from people we have worked with.",
+    "items": {},
+    "previous": "Previous testimonials",
+    "next": "Next testimonials"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "description": "Short answers to common questions. If yours is not here, just ask us.",
+    "contactUs": "Contact Us",
+    "items": {
+      "speed": {
+        "question": "How fast is production?",
+        "answer": "That depends on the size of the part, the material and how many you need. Tell us what you have in mind and we will give you a realistic timeframe."
+      },
+      "materials": {
+        "question": "What materials do you offer?",
+        "answer": "The right material depends on what the part has to do: carry load, withstand heat, look good, or all three. Tell us the purpose and we will recommend something that fits."
+      },
+      "largeParts": {
+        "question": "Can you print large parts?",
+        "answer": "It depends on the part. Send us the dimensions and we will tell you what is possible."
+      },
+      "noFile": {
+        "question": "Do I need a 3D file?",
+        "answer": "No. If you have a sketch, a drawing or only the physical part, we can work from that. We draw or scan the 3D model for you."
+      },
+      "designHelp": {
+        "question": "Do you provide design help?",
+        "answer": "Yes. We design and adjust parts for printing, from a first sketch to a print-ready model."
+      },
+      "shipping": {
+        "question": "Where do you deliver?",
+        "answer": "For now, we deliver within Germany only. We agree on how and when your parts reach you for every order. Need them shipped to another country? Send us an inquiry and we will let you know what is possible."
+      }
+    }
+  },
+  "contact": {
+    "badge": "Contact Us",
+    "title": "Tell us what you want to make",
+    "description": "Send us a message with your idea, a sketch or a file. We read everything carefully, ask what we need to know and get back to you with a quote or the next step.",
+    "socialLabel": "You can also find us here:",
+    "form": {
+      "firstName": "First name",
+      "lastName": "Last name",
+      "email": "Email",
+      "emailPlaceholder": "you@email.com",
+      "phone": "Phone number",
+      "phonePlaceholder": "+49 123 4567890",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your project...",
+      "consentPrefix": "I agree to the ",
+      "privacyPolicy": "Privacy Policy",
+      "consentSuffix": ".",
+      "submit": "Send message",
+      "sending": "Sending...",
+      "success": "Thank you, your message has been sent. We will be in touch.",
+      "error": "Something went wrong. Please try again later.",
+      "errorRequired": "Please fill in all required fields.",
+      "errorEmail": "Please enter a valid email address.",
+      "errorConsent": "Please accept the privacy policy."
+    }
+  },
+  "footer": {
+    "copyright": "Copyright © 2025 quergedruckt, All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "impressum": "Legal Notice"
+  },
+  "legal": {
+    "back": "Back to home",
+    "placeholderNotice": "Placeholder: replace the bracketed entries with your real details before launch. The required content depends on your business, so have the final text checked.",
+    "impressum": {
+      "title": "Legal Notice",
+      "metaTitle": "Legal Notice | quergedruckt",
+      "sections": {
+        "provider": {
+          "title": "Provider",
+          "body": "[Company or full name]\n[Legal form]\n[Street and number]\n[Postcode and city]"
+        },
+        "contact": {
+          "title": "Contact",
+          "body": "[Email address]\n[Phone number]"
+        },
+        "representative": {
+          "title": "Represented by",
+          "body": "[Name of the authorised representative]"
+        },
+        "register": {
+          "title": "Commercial register",
+          "body": "[Register court and registration number, if applicable]"
+        },
+        "vat": {
+          "title": "VAT ID",
+          "body": "[VAT ID, if applicable]"
+        },
+        "responsible": {
+          "title": "Responsible for content",
+          "body": "[Name and address]"
+        }
+      }
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "metaTitle": "Privacy Policy | quergedruckt",
+      "sections": {
+        "controller": {
+          "title": "Controller",
+          "body": "[Name and address of the controller]\n[Contact email for privacy questions]"
+        },
+        "hosting": {
+          "title": "Hosting",
+          "body": "This website is hosted on GitHub Pages. When you visit it, the hosting provider processes technical access data such as your IP address, the date and time of the request and the pages you open. This is necessary to deliver the site and keep it secure. The legal basis is our legitimate interest under Art. 6(1)(f) GDPR."
+        },
+        "contactForm": {
+          "title": "Contact form",
+          "body": "If you use the contact form, we process the name, email address, phone number (optional) and message you enter, along with the language selected on the site. We use this data only to answer your enquiry. The form is operated by Formspree, which forwards your message to [recipient email address]. The legal basis is Art. 6(1)(b) GDPR for enquiries about a contract and otherwise our legitimate interest under Art. 6(1)(f) GDPR. We delete your data once your request has been dealt with, unless legal retention duties apply. [State the exact retention period and check whether data is transferred outside the EU.]"
+        },
+        "language": {
+          "title": "Language preference",
+          "body": "The language you choose is saved in your browser (local storage) so the site remembers it on your next visit. The setting stays on your device and is not sent to us."
+        },
+        "rights": {
+          "title": "Rights of data subjects",
+          "body": "You have the right to access your data, to have it corrected or deleted, to restrict its processing, to receive it in a portable format and to object to its processing. You can also lodge a complaint with a data protection supervisory authority. To exercise your rights, contact us using the details above."
+        }
+      }
+    }
+  }
+}

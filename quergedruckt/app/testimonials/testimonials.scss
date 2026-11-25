@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   gap: 70px;
-  height: 905px;
+  min-height: 905px;
   align-items: center;
   padding: 130px 80px;
   width: 100%;
@@ -55,8 +55,8 @@
   .testimonials-grid {
     display: flex;
     gap: 32px;
-    height: 321px;
-    align-items: center;
+    min-height: 321px;
+    align-items: stretch;
     width: 100%;
 
     .testimonial-card {
@@ -121,7 +121,7 @@
               font-size: 12px;
               line-height: normal;
               color: #b3b3b3;
-              width: 242.475px;
+              width: 100%;
               margin: 0;
             }
           }
@@ -164,7 +164,7 @@
           line-height: 24px;
           color: #b3b3b3;
           text-align: center;
-          width: 338.28px;
+          width: 100%;
           white-space: pre-wrap;
           margin: 0;
         }
@@ -185,18 +185,27 @@
       border-radius: 100px;
       width: 56px;
       position: relative;
+      border: none;
+      background-color: $primary-orange;
+      cursor: pointer;
 
-      &.active {
-        background-color: $primary-orange;
-      }
-
-      &.inactive {
-        background-color: rgba(255, 115, 34, 0.1);
+      // Previous button: same arrow, flipped to point left.
+      &.prev {
         transform: rotate(180deg);
 
         .pagination-icon {
           transform: rotate(180deg);
         }
+      }
+
+      &:disabled {
+        background-color: rgba(255, 115, 34, 0.1);
+        cursor: default;
+      }
+
+      &:focus-visible {
+        outline: 2px solid $primary-orange;
+        outline-offset: 2px;
       }
 
       .pagination-icon {
@@ -207,3 +216,30 @@
   }
 }
 
+.testimonials {
+  @include tablet {
+    min-height: 0;
+    padding: 80px 40px;
+    gap: 48px;
+
+    .testimonials-grid {
+      flex-direction: column;
+      min-height: 0;
+
+      .testimonial-card {
+        flex: none;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  @include phone {
+    padding: 56px 20px;
+
+    .testimonials-header .testimonials-title-section .testimonials-title {
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+}

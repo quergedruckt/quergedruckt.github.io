@@ -1,47 +1,42 @@
+"use client";
+
 import './howItWorks.scss';
 import Image from 'next/image';
+import { useTranslation } from '../i18n/i18n';
+
+const STEPS = [
+  { id: 'design', number: '01' },
+  { id: 'printing', number: '02' },
+  { id: 'delivery', number: '03', bold: true },
+];
 
 const HowItWorks = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="how-it-works">
       <div className="how-it-works-header">
-        <p className="section-label">How It Works</p>
-        <h2 className="how-it-works-title">Turning Ideas into Reality Faster</h2>
+        <p className="section-label">{t('how.label')}</p>
+        <h2 className="how-it-works-title">{t('how.title')}</h2>
       </div>
       <div className="how-it-works-content">
         <div className="how-it-works-steps">
-          <div className="step-item">
-            <div className="step-header">
-              <p className="step-number">01</p>
-              <h3 className="step-title">Design Your Model</h3>
+          {STEPS.map(({ id, number, bold }) => (
+            <div className="step-item" key={id}>
+              <div className="step-header">
+                <p className="step-number">{number}</p>
+                <h3 className={`step-title${bold ? ' step-title-bold' : ''}`}>{t(`how.steps.${id}.title`)}</h3>
+              </div>
+              <p className="step-description">
+                {t(`how.steps.${id}.description`)}
+              </p>
             </div>
-            <p className="step-description">
-              Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship.
-            </p>
-          </div>
-          <div className="step-item">
-            <div className="step-header">
-              <p className="step-number">02</p>
-              <h3 className="step-title">Precision 3D Printing</h3>
-            </div>
-            <p className="step-description">
-              Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship.
-            </p>
-          </div>
-          <div className="step-item">
-            <div className="step-header">
-              <p className="step-number">03</p>
-              <h3 className="step-title step-title-bold">Secure Fast Delivery</h3>
-            </div>
-            <p className="step-description">
-              Founded with passion for technology and design, quergedruckt stands for creative problem-solving and precision craftsmanship.
-            </p>
-          </div>
+          ))}
         </div>
         <div className="how-it-works-image">
-          <Image 
-            src="https://www.figma.com/api/mcp/asset/b4efa8b3-d86f-41da-ad32-60eef4fa556e" 
-            alt="" 
+          <Image
+            src="https://www.figma.com/api/mcp/asset/b4efa8b3-d86f-41da-ad32-60eef4fa556e"
+            alt=""
             fill
             className="how-it-works-img"
           />
@@ -52,4 +47,3 @@ const HowItWorks = () => {
 }
 
 export default HowItWorks;
-

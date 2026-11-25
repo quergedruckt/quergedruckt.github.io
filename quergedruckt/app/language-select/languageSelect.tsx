@@ -1,61 +1,74 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
-import { Button, Menu, MenuItem, ListItemIcon } from "@mui/material";
+import { useEffect, useRef, useState } from "react";
+import "./languageSelect.scss";
+import { LANGUAGES, type Language, useTranslation } from "../i18n/i18n";
 
-const languages = [
-  { code: "en", flag: "🇬🇧" },
-  { code: "de", flag: "🇩🇪" },
-];
+const FLAGS: Record<Language, string> = {
+  en: "🇬🇧",
+  de: "🇩🇪",
+};
 
 const LanguageSelect = () => {
-  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
-  const [language, setLanguage] = useState("en");
-  const [mounted, setMounted] = useState(false);
+  const { t, language, setLanguage } = useTranslation();
+  const [open, setOpen] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
 
-  // Avoid hydration mismatch safely — defer flag render until client
+  // Close on outside click or Escape
   useEffect(() => {
-    const id = requestAnimationFrame(() => setMounted(true));
-    return () => cancelAnimationFrame(id);
-  }, []);
+    if (!open) return;
+    const onPointerDown = (event: MouseEvent) => {
+      if (!containerRef.current?.contains(event.target as Node)) setOpen(false);
+    };
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setOpen(false);
+    };
+    document.addEventListener("mousedown", onPointerDown);
+    document.addEventListener("keydown", onKeyDown);
+    return () => {
+      document.removeEventListener("mousedown", onPointerDown);
+      document.removeEventListener("keydown", onKeyDown);
+    };
+  }, [open]);
 
-  if (!mounted) return null;
-
-  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) =>
-    setAnchorEl(event.currentTarget);
-
-  const handleClose = (code?: string) => {
-    if (code) setLanguage(code);
-    setAnchorEl(null);
-    // i18n.changeLanguage(code);
+  const select = (code: Language) => {
+    setLanguage(code);
+    setOpen(false);
   };
 
   return (
-    <>
-      <Button
-        onClick={handleClick}
-        variant="text"
-        sx={{ minWidth: 0, p: 1 }}
+    <div className="language-select" ref={containerRef}>
+      <button
+        type="button"
+        className="language-select-button"
+        aria-haspopup="listbox"
+        aria-expanded={open}
+        aria-label={`${t("language.label")}: ${t(`language.${language}`)}`}
+        onClick={() => setOpen((value) => !value)}
       >
-        <span style={{ fontSize: "1.5rem" }}>
-          {languages.find((l) => l.code === language)?.flag}
-        </span>
-      </Button>
+        <span className="language-select-flag" aria-hidden="true">{FLAGS[language]}</span>
+        <span className="language-select-code">{language.toUpperCase()}</span>
+      </button>
 
-      <Menu
-        anchorEl={anchorEl}
-        open={Boolean(anchorEl)}
-        onClose={() => setAnchorEl(null)}
-      >
-        {languages.map(({ code, flag }) => (
-          <MenuItem key={code} onClick={() => handleClose(code)}>
-            <ListItemIcon sx={{ minWidth: "auto" }}>
-              <span style={{ fontSize: "1.5rem" }}>{flag}</span>
-            </ListItemIcon>
-          </MenuItem>
-        ))}
-      </Menu>
-    </>
+      {open && (
+        <ul className="language-select-menu" role="listbox" aria-label={t("language.label")}>
+          {LANGUAGES.map((code) => (
+            <li key={code} role="presentation">
+              <button
+                type="button"
+                role="option"
+                aria-selected={code === language}
+                className={`language-select-option${code === language ? " selected" : ""}`}
+                onClick={() => select(code)}
+              >
+                <span className="language-select-flag" aria-hidden="true">{FLAGS[code]}</span>
+                <span>{t(`language.${code}`)}</span>
+              </button>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
   );
 };
 

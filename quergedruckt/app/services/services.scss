@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   gap: 70px;
-  height: 974px;
+  min-height: 974px;
   align-items: flex-start;
   padding: 130px 80px;
   width: 100%;
@@ -21,7 +21,8 @@
       flex-direction: column;
       gap: 12px;
       align-items: flex-start;
-      width: 659px;
+      max-width: 659px;
+      width: 100%;
       white-space: pre-wrap;
 
       .section-label {
@@ -72,14 +73,15 @@
     .services-row {
       display: flex;
       gap: 24px;
-      align-items: center;
+      align-items: stretch;
       width: 100%;
 
       .service-card {
-        height: 269px;
+        min-height: 269px;
         overflow: hidden;
         border-radius: 16px;
-        width: 410px;
+        flex: 1 1 0;
+        min-width: 0;
         position: relative;
 
         &.highlighted {
@@ -87,11 +89,10 @@
         }
 
         .service-card-content {
-          position: absolute;
-          left: 50%;
-          transform: translateX(-50%);
-          top: 24px;
-          width: 362px;
+          position: relative;
+          padding: 24px;
+          box-sizing: border-box;
+          width: 100%;
           display: flex;
           flex-direction: column;
           gap: 20px;
@@ -187,3 +188,27 @@
   }
 }
 
+.services {
+  @include tablet {
+    min-height: 0;
+    padding: 80px 40px;
+    gap: 40px;
+
+    .services-grid .services-row {
+      flex-wrap: wrap;
+
+      .service-card {
+        flex: 1 1 300px;
+      }
+    }
+  }
+
+  @include phone {
+    padding: 56px 20px;
+
+    .services-header .services-title-section .services-title {
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+}

@@ -3,7 +3,7 @@
 .about-us {
   display: flex;
   flex-direction: column;
-  height: 610px;
+  min-height: 610px;
   align-items: center;
   justify-content: space-between;
   padding: 130px 80px;
@@ -20,7 +20,8 @@
       flex-direction: column;
       gap: 40px;
       align-items: flex-start;
-      width: 564px;
+      flex: 0 1 564px;
+      min-width: 0;
 
       .about-us-header {
         display: flex;
@@ -47,7 +48,7 @@
           width: 100%;
 
           .about-us-title {
-            height: 96px;
+            min-height: 96px;
             font-family: 'Lato', sans-serif;
             font-weight: 700;
             font-size: 40px;
@@ -55,7 +56,8 @@
             color: $white;
             text-transform: capitalize;
             margin: 0;
-            width: 437px;
+            max-width: 437px;
+            width: 100%;
             white-space: pre-wrap;
           }
 
@@ -65,7 +67,8 @@
             font-size: 16px;
             line-height: 26px;
             color: #ccc;
-            width: 548px;
+            max-width: 548px;
+            width: 100%;
             white-space: pre-wrap;
             margin: 0;
           }
@@ -136,6 +139,61 @@
         object-fit: cover;
         border-radius: 16px;
         pointer-events: none;
+      }
+    }
+  }
+}
+
+.about-us {
+  @include tablet {
+    min-height: 0;
+    padding: 80px 40px;
+
+    .about-us-content {
+      flex-direction: column;
+      gap: 40px;
+
+      .about-us-text {
+        flex: none;
+        width: 100%;
+
+        .about-us-features {
+          height: auto;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 16px 24px;
+
+          .feature-item {
+            position: static;
+          }
+        }
+      }
+
+      .about-us-image {
+        flex: none;
+        width: 100%;
+        height: 300px;
+      }
+    }
+  }
+
+  @include phone {
+    padding: 56px 20px;
+
+    .about-us-content {
+      .about-us-text {
+        .about-us-header .about-us-title-section .about-us-title {
+          font-size: 32px;
+          line-height: 40px;
+        }
+
+        .about-us-features {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .about-us-image {
+        height: 220px;
       }
     }
   }

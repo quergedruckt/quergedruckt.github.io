@@ -106,8 +106,11 @@
               padding: 10px;
               border-radius: 8px;
 
+              color: $white;
+
               &.highlighted {
                 background: rgba(255, 115, 34, 0.15);
+                color: $primary-orange;
               }
             }
           }

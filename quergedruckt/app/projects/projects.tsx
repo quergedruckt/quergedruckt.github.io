@@ -43,7 +43,7 @@ const Projects = () => {
                   <div className="project-image">
                     <Image
                       src={image}
-                      alt=""
+                      alt={t(`projects.items.${id}.title`)}
                       fill
                       className="project-img"
                     />

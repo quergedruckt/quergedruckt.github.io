@@ -1,7 +1,6 @@
 "use client";
 
 import './contact.scss';
-import Image from 'next/image';
 import { type FormEvent, useState } from 'react';
 import { useTranslation } from '../i18n/i18n';
 import { SITE_LINKS, linkProps } from '../config/site';
@@ -10,11 +9,22 @@ import { SITE_LINKS, linkProps } from '../config/site';
 // accepts a JSON POST). Set it in .env.local, see .env.example.
 const CONTACT_ENDPOINT = process.env.NEXT_PUBLIC_CONTACT_ENDPOINT;
 
+type FieldName = 'firstName' | 'lastName' | 'email' | 'message' | 'consent';
+
+// Used to move focus to the field that caused a validation error.
+const FIELD_IDS: Record<FieldName, string> = {
+  firstName: 'contact-first-name',
+  lastName: 'contact-last-name',
+  email: 'contact-email',
+  message: 'contact-message',
+  consent: 'contact-consent',
+};
+
 type Status =
   | { state: 'idle' }
   | { state: 'sending' }
   | { state: 'success' }
-  | { state: 'error'; messageKey: string };
+  | { state: 'error'; messageKey: string; field?: FieldName };
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -22,6 +32,17 @@ const Contact = () => {
   const { t, language } = useTranslation();
   const [status, setStatus] = useState<Status>({ state: 'idle' });
   const [consent, setConsent] = useState(false);
+
+  // Marks a field as invalid and links it to the error message for screen readers.
+  const invalidProps = (field: FieldName) =>
+    status.state === 'error' && status.field === field
+      ? { 'aria-invalid': true as const, 'aria-describedby': 'contact-form-status' }
+      : {};
+
+  const fail = (messageKey: string, field?: FieldName) => {
+    setStatus({ state: 'error', messageKey, field });
+    if (field) document.getElementById(FIELD_IDS[field])?.focus();
+  };
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -43,16 +64,21 @@ const Contact = () => {
     const phone = value('phone');
     const message = value('message');
 
-    if (!firstName || !lastName || !email || !message) {
-      setStatus({ state: 'error', messageKey: 'contact.form.errorRequired' });
+    const firstMissing: FieldName | undefined = !firstName ? 'firstName'
+      : !lastName ? 'lastName'
+      : !email ? 'email'
+      : !message ? 'message'
+      : undefined;
+    if (firstMissing) {
+      fail('contact.form.errorRequired', firstMissing);
       return;
     }
     if (!EMAIL_PATTERN.test(email)) {
-      setStatus({ state: 'error', messageKey: 'contact.form.errorEmail' });
+      fail('contact.form.errorEmail', 'email');
       return;
     }
     if (!consent) {
-      setStatus({ state: 'error', messageKey: 'contact.form.errorConsent' });
+      fail('contact.form.errorConsent', 'consent');
       return;
     }
     if (!CONTACT_ENDPOINT) {
@@ -114,6 +140,7 @@ const Contact = () => {
                 <div className="field-input">
                   <input
                     id="contact-first-name"
+                  {...invalidProps('firstName')}
                     name="firstName"
                     type="text"
                     autoComplete="given-name"
@@ -130,6 +157,7 @@ const Contact = () => {
                 <div className="field-input">
                   <input
                     id="contact-last-name"
+                  {...invalidProps('lastName')}
                     name="lastName"
                     type="text"
                     autoComplete="family-name"
@@ -147,6 +175,7 @@ const Contact = () => {
               <div className="field-input">
                 <input
                   id="contact-email"
+                {...invalidProps('email')}
                   name="email"
                   type="email"
                   autoComplete="email"
@@ -177,17 +206,15 @@ const Contact = () => {
               <div className="field-input message-input">
                 <textarea
                   id="contact-message"
+                  {...invalidProps('message')}
                   name="message"
                   placeholder={t('contact.form.messagePlaceholder')}
                   required
                 />
                 <div className="message-icon">
-                  <Image
-                    src="https://www.figma.com/api/mcp/asset/6c3d6f4f-afff-4ca7-a9d5-dc6d3ca10e1b"
-                    alt=""
-                    width={12}
-                    height={12}
-                  />
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                    <path d="M11 1L1 11M11 6L6 11" stroke="currentColor" strokeLinecap="round" />
+                  </svg>
                 </div>
               </div>
             </div>
@@ -203,8 +230,10 @@ const Contact = () => {
             <label className="form-checkbox">
               <input
                 type="checkbox"
+                id="contact-consent"
                 className="checkbox-input"
                 checked={consent}
+                {...invalidProps('consent')}
                 onChange={(event) => setConsent(event.target.checked)}
               />
               <span className="checkbox" aria-hidden="true"></span>
@@ -225,7 +254,7 @@ const Contact = () => {
                 {t('contact.form.consentSuffix')}
               </span>
             </label>
-            <div className="form-status" role="status" aria-live="polite">
+            <div className="form-status" id="contact-form-status" role="status" aria-live="polite">
               {status.state === 'sending' && <p>{t('contact.form.sending')}</p>}
               {status.state === 'success' && <p className="success">{t('contact.form.success')}</p>}
               {status.state === 'error' && <p className="error">{t(status.messageKey)}</p>}

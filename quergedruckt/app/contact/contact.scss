@@ -223,6 +223,7 @@
                 right: 5px;
                 width: 12px;
                 height: 12px;
+                color: #b3b3b3;
               }
             }
 
@@ -312,7 +313,7 @@
               top: 2px;
               width: 5px;
               height: 10px;
-              border: solid $white;
+              border: solid $black;
               border-width: 0 2px 2px 0;
               transform: rotate(45deg);
             }
@@ -374,7 +375,7 @@
           font-weight: 500;
           font-size: 16px;
           line-height: 24px;
-          color: $white;
+          color: $black;
           text-transform: uppercase;
 
           &:disabled {

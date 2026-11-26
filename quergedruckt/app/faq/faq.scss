@@ -53,7 +53,7 @@
 
       .btn-primary {
         background-color: $primary-orange;
-        color: $white;
+        color: $black;
         font-family: 'Urbanist', sans-serif;
         font-weight: 500;
         font-size: 18px;
@@ -87,11 +87,12 @@
           }
 
           .faq-arrow {
-            transform: rotate(-90deg);
+            transform: rotate(180deg);
           }
         }
 
         .faq-question-wrapper {
+          cursor: pointer;
           display: flex;
           align-items: flex-start;
           justify-content: space-between;
@@ -116,6 +117,24 @@
               color: $white;
               white-space: normal;
               margin: 0;
+
+              .faq-question-button {
+                background: none;
+                border: 0;
+                padding: 0;
+                margin: 0;
+                font: inherit;
+                letter-spacing: inherit;
+                color: inherit;
+                text-align: left;
+                cursor: pointer;
+
+                &:focus-visible {
+                  outline: 2px solid $primary-orange;
+                  outline-offset: 4px;
+                  border-radius: 4px;
+                }
+              }
             }
 
             .faq-answer {
@@ -141,7 +160,7 @@
             justify-content: center;
 
             .faq-arrow {
-              transform: rotate(-90deg);
+              transform: rotate(180deg);
             }
           }
         }

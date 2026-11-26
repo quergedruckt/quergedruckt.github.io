@@ -18,24 +18,24 @@ const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="footer">
+    <footer className="footer">
       <div className="footer-content">
         <div className="footer-logo">
           <Image
             src="/images/Quergedruckt.svg"
-            alt="Quergedruckt Logo"
+            alt="quergedruckt"
             width={200}
             height={30}
           />
         </div>
-        <div className="footer-navigation">
+        <nav className="footer-navigation" aria-label={t('a11y.footerNavigation')}>
           {FOOTER_NAV.map((item, index) => (
             <Fragment key={item.id}>
               {index > 0 && <div className="footer-dot"></div>}
               <a className="footer-nav-item" {...linkProps(item.href)}>{t(`nav.${item.id}`)}</a>
             </Fragment>
           ))}
-        </div>
+        </nav>
         <div className="footer-social">
           {SOCIAL_ICONS.map(({ src, size }) => (
             <div className="social-icon" key={src}>
@@ -61,7 +61,7 @@ const Footer = () => {
           )}
         </div>
       </div>
-    </div>
+    </footer>
   );
 }
 

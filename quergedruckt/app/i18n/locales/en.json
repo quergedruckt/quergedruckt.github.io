@@ -21,6 +21,12 @@
     "en": "English",
     "de": "Deutsch"
   },
+  "a11y": {
+    "skipToContent": "Skip to main content",
+    "mainNavigation": "Main navigation",
+    "footerNavigation": "Footer navigation",
+    "logoHome": "quergedruckt, back to home page"
+  },
   "hero": {
     "titleLine1": "Get the benefits of",
     "titleLine2": "3D printing",
@@ -29,11 +35,11 @@
   "about": {
     "label": "About Us",
     "title": "From idea to finished part",
-    "description": "quergedruckt turns digital designs into physical parts. We design, prototype and print, and we can scan an existing part when there is no drawing to work from. One idea or a small series, it all starts with a conversation about what you need.",
+    "description": "quergedruckt turns digital designs into physical parts. We design, prototype and print. One idea or a small series, it all starts with a conversation about what you need.",
     "features": {
       "insight": "One contact from sketch to part",
       "scalable": "Single prototypes and series parts",
-      "audience": "Scanning for parts without drawings",
+      "audience": "Design help if you have no model yet",
       "strategy": "Plain advice, no jargon"
     }
   },
@@ -53,17 +59,13 @@
         "title": "Custom 3D Printing",
         "description": "Send us your file and we print it. One-off pieces and small batches, made in exactly the shape you need."
       },
-      "scanning": {
-        "title": "3D Scanning",
-        "description": "We capture a physical object as a digital 3D model. That makes it possible to copy, repair or adapt something that so far only exists on your workbench."
-      },
       "production": {
         "title": "Production Parts",
         "description": "For parts that end up in real use, printing is often the more practical route in small quantities, because it needs no tooling. We are happy to talk through whether it makes sense for yours."
       },
       "reverse": {
         "title": "Reverse Engineering",
-        "description": "A part is broken, no longer made or was never documented. We scan it, rebuild the model and work out how to make it again."
+        "description": "A part is broken, no longer made or was never documented. We rebuild its model from the physical part and work out how to make it again."
       }
     }
   },
@@ -151,7 +153,7 @@
       },
       "noFile": {
         "question": "Do I need a 3D file?",
-        "answer": "No. If you have a sketch, a drawing or only the physical part, we can work from that. We draw or scan the 3D model for you."
+        "answer": "No. If you have a sketch or a drawing, we can work from that and draw the 3D model for you."
       },
       "designHelp": {
         "question": "Do you provide design help?",
@@ -195,63 +197,6 @@
     "impressum": "Legal Notice"
   },
   "legal": {
-    "back": "Back to home",
-    "placeholderNotice": "Placeholder: replace the bracketed entries with your real details before launch. The required content depends on your business, so have the final text checked.",
-    "impressum": {
-      "title": "Legal Notice",
-      "metaTitle": "Legal Notice | quergedruckt",
-      "sections": {
-        "provider": {
-          "title": "Provider",
-          "body": "[Company or full name]\n[Legal form]\n[Street and number]\n[Postcode and city]"
-        },
-        "contact": {
-          "title": "Contact",
-          "body": "[Email address]\n[Phone number]"
-        },
-        "representative": {
-          "title": "Represented by",
-          "body": "[Name of the authorised representative]"
-        },
-        "register": {
-          "title": "Commercial register",
-          "body": "[Register court and registration number, if applicable]"
-        },
-        "vat": {
-          "title": "VAT ID",
-          "body": "[VAT ID, if applicable]"
-        },
-        "responsible": {
-          "title": "Responsible for content",
-          "body": "[Name and address]"
-        }
-      }
-    },
-    "privacy": {
-      "title": "Privacy Policy",
-      "metaTitle": "Privacy Policy | quergedruckt",
-      "sections": {
-        "controller": {
-          "title": "Controller",
-          "body": "[Name and address of the controller]\n[Contact email for privacy questions]"
-        },
-        "hosting": {
-          "title": "Hosting",
-          "body": "This website is hosted on GitHub Pages. When you visit it, the hosting provider processes technical access data such as your IP address, the date and time of the request and the pages you open. This is necessary to deliver the site and keep it secure. The legal basis is our legitimate interest under Art. 6(1)(f) GDPR."
-        },
-        "contactForm": {
-          "title": "Contact form",
-          "body": "If you use the contact form, we process the name, email address, phone number (optional) and message you enter, along with the language selected on the site. We use this data only to answer your enquiry. The form is operated by Formspree, which forwards your message to [recipient email address]. The legal basis is Art. 6(1)(b) GDPR for enquiries about a contract and otherwise our legitimate interest under Art. 6(1)(f) GDPR. We delete your data once your request has been dealt with, unless legal retention duties apply. [State the exact retention period and check whether data is transferred outside the EU.]"
-        },
-        "language": {
-          "title": "Language preference",
-          "body": "The language you choose is saved in your browser (local storage) so the site remembers it on your next visit. The setting stays on your device and is not sent to us."
-        },
-        "rights": {
-          "title": "Rights of data subjects",
-          "body": "You have the right to access your data, to have it corrected or deleted, to restrict its processing, to receive it in a portable format and to object to its processing. You can also lodge a complaint with a data protection supervisory authority. To exercise your rights, contact us using the details above."
-        }
-      }
-    }
+    "back": "Back to home"
   }
 }

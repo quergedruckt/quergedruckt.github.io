@@ -4,8 +4,6 @@ import './projects.scss';
 import Image from 'next/image';
 import { useTranslation } from '../i18n/i18n';
 
-const ARROW = 'https://www.figma.com/api/mcp/asset/a22f620f-4cad-45ef-8123-4597ed3dfc86';
-
 type Project = { id: string; image: string };
 
 // In the design, the image sits left of the text in the first row and right of it in the second.

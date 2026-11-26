@@ -4,8 +4,7 @@
     "description": "Custom 3D printing, prototyping, and design services for innovators, makers, and businesses."
   },
   "common": {
-    "getAQuote": "Get a Quote",
-    "learnMore": "Learn More"
+    "getAQuote": "Get a Quote"
   },
   "nav": {
     "home": "Home",
@@ -168,7 +167,6 @@
     "badge": "Contact Us",
     "title": "Tell us what you want to make",
     "description": "Send us a message with your idea, a sketch or a file. We read everything carefully, ask what we need to know and get back to you with a quote or the next step.",
-    "socialLabel": "You can also find us here:",
     "form": {
       "firstName": "First name",
       "lastName": "Last name",

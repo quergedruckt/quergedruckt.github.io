@@ -10,14 +10,6 @@ import { SITE_LINKS, linkProps } from '../config/site';
 // accepts a JSON POST). Set it in .env.local, see .env.example.
 const CONTACT_ENDPOINT = process.env.NEXT_PUBLIC_CONTACT_ENDPOINT;
 
-const SOCIAL_ICONS = [
-  { src: 'https://www.figma.com/api/mcp/asset/ec41deb2-edd3-4c36-993c-7f056db03b35', size: 18 },
-  { src: 'https://www.figma.com/api/mcp/asset/2a508c81-ed63-4e4c-aca1-d45907b05ac3', size: 20 },
-  { src: 'https://www.figma.com/api/mcp/asset/15fce118-2e81-4996-b00b-23408711200d', size: 20 },
-  { src: 'https://www.figma.com/api/mcp/asset/791a3252-461e-48b8-bf68-3e0024e745ee', size: 20 },
-  { src: 'https://www.figma.com/api/mcp/asset/4a506562-1146-4b49-94f0-44f9cb5080fe', size: 20 },
-];
-
 type Status =
   | { state: 'idle' }
   | { state: 'sending' }

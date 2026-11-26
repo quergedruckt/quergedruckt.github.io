@@ -4,9 +4,6 @@ import './services.scss';
 import Image from 'next/image';
 import { useTranslation } from '../i18n/i18n';
 
-const ARROW = 'https://www.figma.com/api/mcp/asset/f4c9455e-9458-40aa-8443-bec0bb536b17';
-const ARROW_HIGHLIGHTED = 'https://www.figma.com/api/mcp/asset/a22f620f-4cad-45ef-8123-4597ed3dfc86';
-
 type Service = { id: string; icon: string; highlighted?: boolean };
 
 const SERVICE_ROWS: Service[][] = [

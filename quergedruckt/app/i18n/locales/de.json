@@ -4,8 +4,7 @@
     "description": "Individueller 3D-Druck, Prototyping und Design-Services für Innovatoren, Maker und Unternehmen."
   },
   "common": {
-    "getAQuote": "Angebot anfordern",
-    "learnMore": "Mehr erfahren"
+    "getAQuote": "Angebot anfordern"
   },
   "nav": {
     "home": "Start",
@@ -168,7 +167,6 @@
     "badge": "Kontakt",
     "title": "Erzähl uns, was du herstellen möchtest",
     "description": "Schick uns eine Nachricht mit deiner Idee, einer Skizze oder einer Datei. Wir lesen alles in Ruhe, fragen nach, was wir wissen müssen, und melden uns mit einem Angebot oder dem nächsten Schritt.",
-    "socialLabel": "Du findest uns auch hier:",
     "form": {
       "firstName": "Vorname",
       "lastName": "Nachname",

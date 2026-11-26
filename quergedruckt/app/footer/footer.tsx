@@ -50,7 +50,9 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p className="footer-copyright">{t('footer.copyright')}</p>
+        <p className="footer-copyright" suppressHydrationWarning>
+          {t('footer.copyright').replace('{year}', String(new Date().getFullYear()))}
+        </p>
         <div className="footer-links">
           {LEGAL_LINKS.map(({ id, labelKey, href }) =>
             href ? (

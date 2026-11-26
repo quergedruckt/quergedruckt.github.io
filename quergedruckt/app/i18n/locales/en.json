@@ -191,9 +191,8 @@
     }
   },
   "footer": {
-    "copyright": "Copyright © 2025 quergedruckt, All rights reserved.",
+    "copyright": "Copyright © {year} quergedruckt. All rights reserved.",
     "privacy": "Privacy Policy",
-    "terms": "Terms of Service",
     "impressum": "Legal Notice"
   },
   "legal": {

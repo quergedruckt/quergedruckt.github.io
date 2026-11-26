@@ -1,5 +1,6 @@
 @import '../styles/variables.scss';
 
+// Type scale and spacing follow the home page sections (section titles, labels, body text).
 .legal-page {
   display: flex;
   flex-direction: column;
@@ -8,6 +9,7 @@
   color: $white;
   font-family: 'Urbanist', sans-serif;
 
+  // Same frame as the hero header: 1280px container, 30px / 80px padding, 48px high.
   .legal-header {
     display: flex;
     align-items: center;
@@ -15,11 +17,14 @@
     gap: 16px;
     width: 100%;
     max-width: 1280px;
+    min-height: 48px;
     margin: 0 auto;
     padding: 30px 80px;
+    box-sizing: content-box;
 
     .legal-logo {
       display: block;
+      width: 200px;
       line-height: 0;
 
       img {
@@ -29,53 +34,67 @@
     }
   }
 
+  // The text column starts at the same left edge as the logo and stays readable at 800px.
   .legal-content {
     flex: 1 0 auto;
     width: 100%;
-    max-width: 800px;
+    max-width: 1280px;
     margin: 0 auto;
-    padding: 40px 80px 80px;
+    padding: 60px 80px 100px;
     box-sizing: border-box;
+
+    > * {
+      max-width: 800px;
+    }
 
     .legal-back {
       display: inline-block;
-      margin-bottom: 24px;
+      margin-bottom: 32px;
       color: $primary-orange;
+      font-weight: 500;
       font-size: 16px;
+      line-height: 24px;
     }
 
+    // Page title: same as the section titles on the home page.
     h1 {
-      margin: 0 0 24px;
+      margin: 0 0 32px;
+      font-weight: 700;
       font-size: 40px;
       line-height: 48px;
-      font-weight: 500;
+      color: $white;
       overflow-wrap: anywhere;
     }
 
     h2 {
-      margin: 40px 0 12px;
+      margin: 56px 0 16px;
+      font-weight: 500;
       font-size: 28px;
       line-height: 36px;
-      font-weight: 500;
+      color: $white;
     }
 
     h3 {
-      margin: 28px 0 8px;
-      font-size: 20px;
-      line-height: 28px;
+      margin: 32px 0 12px;
       font-weight: 500;
+      font-size: 24px;
+      line-height: 32px;
+      color: $white;
     }
 
+    // Small orange label, like the section labels ("About Us", "Our Services").
     h4 {
-      margin: 20px 0 6px;
-      font-size: 16px;
+      margin: 24px 0 8px;
+      font-weight: 500;
+      font-size: 18px;
       line-height: 24px;
-      font-weight: 600;
+      color: $primary-orange;
     }
 
     p,
     li {
-      margin: 0 0 12px;
+      margin: 0 0 16px;
+      font-weight: 400;
       font-size: 16px;
       line-height: 24px;
       color: #b3b3b3;
@@ -83,7 +102,7 @@
     }
 
     ul {
-      margin: 0 0 12px;
+      margin: 0 0 16px;
       padding-left: 24px;
       list-style: disc;
     }
@@ -91,25 +110,47 @@
     a {
       color: $primary-orange;
       text-decoration: underline;
+      text-underline-offset: 3px;
     }
   }
 
-  @media (max-width: 768px) {
+  @include tablet {
     .legal-header {
-      padding: 20px 20px;
-
-      .legal-logo img {
-        width: 150px;
-      }
+      padding: 30px 40px;
     }
 
     .legal-content {
-      padding: 24px 20px 56px;
+      padding: 40px 40px 80px;
 
       h1 {
         font-size: 32px;
         line-height: 40px;
       }
+
+      h2 {
+        margin-top: 40px;
+        font-size: 22px;
+        line-height: 30px;
+      }
+
+      h3 {
+        font-size: 20px;
+        line-height: 28px;
+      }
+    }
+  }
+
+  @include phone {
+    .legal-header {
+      padding: 20px 20px;
+
+      .legal-logo {
+        width: 150px;
+      }
+    }
+
+    .legal-content {
+      padding: 32px 20px 56px;
     }
   }
 }

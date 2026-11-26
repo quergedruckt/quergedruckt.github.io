@@ -8,10 +8,9 @@ export const SITE_LINKS = {
   model3d: '',
   // Legal pages, for example '/privacy' or 'https://example.com/privacy'.
   // While empty, the footer and form texts are shown as plain text instead of links.
-  // Placeholder pages live in app/impressum and app/privacy (texts in the locale files under legal.*).
+  // The texts live in app/impressum/page.tsx and app/privacy/page.tsx.
   impressum: '/impressum',
   privacyPolicy: '/privacy',
-  termsOfService: '',
 };
 
 // --- Navigation -----------------------------------------------------------
@@ -39,7 +38,6 @@ export const FOOTER_NAV: NavItem[] = [
 export const LEGAL_LINKS: (NavItem & { labelKey: string })[] = [
   { id: 'impressum', labelKey: 'footer.impressum', href: SITE_LINKS.impressum },
   { id: 'privacy', labelKey: 'footer.privacy', href: SITE_LINKS.privacyPolicy },
-  { id: 'terms', labelKey: 'footer.terms', href: SITE_LINKS.termsOfService },
 ];
 
 // Props for an <a>: external links open in a new tab.

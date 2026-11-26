@@ -4,7 +4,6 @@ import './aboutUs.scss';
 import Image from 'next/image';
 import { useTranslation } from '../i18n/i18n';
 
-const FEATURE_ICON = 'https://www.figma.com/api/mcp/asset/a9d19fc8-b2c6-4ce3-b734-d29ddd839fd9';
 const FEATURES = ['insight', 'scalable', 'audience', 'strategy'];
 
 const AboutUs = () => {

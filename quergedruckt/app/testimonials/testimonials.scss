@@ -135,6 +135,7 @@
           width: 100%;
 
           .stars {
+            color: $primary-orange;
             display: flex;
             gap: 6px;
             align-items: center;
@@ -187,6 +188,7 @@
       position: relative;
       border: none;
       background-color: $primary-orange;
+      color: $black;
       cursor: pointer;
 
       // Previous button: same arrow, flipped to point left.
@@ -199,6 +201,7 @@
       }
 
       &:disabled {
+        color: rgba(255, 115, 34, 0.5);
         background-color: rgba(255, 115, 34, 0.1);
         cursor: default;
       }

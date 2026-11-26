@@ -43,3 +43,26 @@ body {
   width: 100%;
   background-color: #0a0400;
 }
+
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 16px;
+  z-index: 1000;
+  padding: 12px 20px;
+  border-radius: 8px;
+  background: #ff7322;
+  color: #0a0400;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 16px;
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
+main:focus {
+  outline: none;
+}

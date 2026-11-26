@@ -1,12 +1,9 @@
 "use client";
 
 import './faq.scss';
-import Image from 'next/image';
+import { ChevronDown } from 'lucide-react';
 import { useState } from 'react';
 import { useTranslation } from '../i18n/i18n';
-
-const ICON_OPEN = 'https://www.figma.com/api/mcp/asset/92878b1d-e5f5-49a8-9f00-5ea314170080';
-const ICON_CLOSED = 'https://www.figma.com/api/mcp/asset/9adbde46-3b54-4dd1-9ec5-9326cf9ee207';
 
 // Question and answer text lives in the locale files (faq.items.<id>).
 const FAQ_IDS = ['speed', 'materials', 'largeParts', 'noFile', 'designHelp', 'shipping'];
@@ -36,32 +33,22 @@ const FAQ = () => {
             const isOpen = openIndex === index;
             return (
               <div className={`faq-item${isOpen ? ' expanded' : ''}`} key={id}>
-                <div
-                  className="faq-question-wrapper"
-                  role="button"
-                  tabIndex={0}
-                  aria-expanded={isOpen}
-                  style={{ cursor: 'pointer' }}
-                  onClick={() => toggle(index)}
-                  onKeyDown={(e) => {
-                    if (e.key === 'Enter' || e.key === ' ') {
-                      e.preventDefault();
-                      toggle(index);
-                    }
-                  }}
-                >
+                <div className="faq-question-wrapper" onClick={() => toggle(index)}>
                   <div className="faq-question-content">
-                    <h3 className="faq-question">{t(`faq.items.${id}.question`)}</h3>
-                    {isOpen && <p className="faq-answer">{t(`faq.items.${id}.answer`)}</p>}
+                    <h3 className="faq-question">
+                      <button
+                        type="button"
+                        className="faq-question-button"
+                        aria-expanded={isOpen}
+                        aria-controls={isOpen ? `faq-answer-${id}` : undefined}
+                      >
+                        {t(`faq.items.${id}.question`)}
+                      </button>
+                    </h3>
+                    {isOpen && <p className="faq-answer" id={`faq-answer-${id}`}>{t(`faq.items.${id}.answer`)}</p>}
                   </div>
                   <div className="faq-icon">
-                    <Image
-                      src={isOpen ? ICON_OPEN : ICON_CLOSED}
-                      alt=""
-                      width={24}
-                      height={24}
-                      className={isOpen ? 'faq-arrow' : undefined}
-                    />
+                    <ChevronDown size={24} className={isOpen ? 'faq-arrow' : undefined} />
                   </div>
                 </div>
               </div>

@@ -2,19 +2,11 @@
 
 import './testimonials.scss';
 import Image from 'next/image';
+import { ArrowRight, Star } from 'lucide-react';
 import { useState } from 'react';
 import { useTranslation } from '../i18n/i18n';
 
-const STAR_ICONS = [
-  'https://www.figma.com/api/mcp/asset/108c52b8-d6db-4e2d-970d-a7364c93424c',
-  'https://www.figma.com/api/mcp/asset/936033c1-b875-4b0b-9614-615267dea1a7',
-  'https://www.figma.com/api/mcp/asset/d3cdbdf1-eab1-4d44-9086-c6e75fb7bf98',
-  'https://www.figma.com/api/mcp/asset/73596593-f8f3-40b3-bfaa-048bdcb5f6f7',
-  'https://www.figma.com/api/mcp/asset/b05c6235-1927-47be-a507-c558a507d8c1',
-];
-
-const ARROW_ENABLED = 'https://www.figma.com/api/mcp/asset/3233c87b-acc3-4b12-aa8f-d382654a9e52';
-const ARROW_DISABLED = 'https://www.figma.com/api/mcp/asset/16584371-a0c4-4475-be0e-1717e05df02e';
+const STAR_COUNT = 5;
 
 // To add a testimonial: add an entry here and matching `role` and `text` in both
 // locale files under testimonials.items.<id>. Names are not translated. The arrows
@@ -64,8 +56,8 @@ const Testimonials = () => {
               </div>
               <div className="testimonial-rating">
                 <div className="stars">
-                  {STAR_ICONS.map((star) => (
-                    <Image key={star} src={star} alt="" width={16} height={16} />
+                  {Array.from({ length: STAR_COUNT }, (_, index) => (
+                    <Star key={index} size={16} fill="currentColor" />
                   ))}
                 </div>
                 <p className="rating-text">5.0</p>
@@ -87,13 +79,7 @@ const Testimonials = () => {
             disabled={page === 0}
             onClick={() => setPage((current) => Math.max(current - 1, 0))}
           >
-            <Image
-              src={page === 0 ? ARROW_DISABLED : ARROW_ENABLED}
-              alt=""
-              width={24}
-              height={24}
-              className="pagination-icon"
-            />
+            <ArrowRight size={24} className="pagination-icon" />
           </button>
           <button
             type="button"
@@ -102,13 +88,7 @@ const Testimonials = () => {
             disabled={page === pageCount - 1}
             onClick={() => setPage((current) => Math.min(current + 1, pageCount - 1))}
           >
-            <Image
-              src={page === pageCount - 1 ? ARROW_DISABLED : ARROW_ENABLED}
-              alt=""
-              width={24}
-              height={24}
-              className="pagination-icon"
-            />
+            <ArrowRight size={24} className="pagination-icon" />
           </button>
         </div>
       )}

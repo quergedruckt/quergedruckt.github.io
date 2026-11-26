@@ -22,16 +22,16 @@ const Hero = () => {
         />
       </div>
       <div className="hero-content">
-        <div className="hero-header">
+        <header className="hero-header">
           <div className="hero-logo">
             <Image
               src="/images/Quergedruckt.svg"
-              alt="Quergedruckt Logo"
+              alt="quergedruckt"
               width={200}
               height={30}
             />
           </div>
-          <div className={`hero-navigation${menuOpen ? ' open' : ''}`} id="hero-navigation">
+          <nav className={`hero-navigation${menuOpen ? ' open' : ''}`} id="hero-navigation" aria-label={t('a11y.mainNavigation')}>
             {MAIN_NAV.filter((item) => item.href).map((item) => (
               <a
                 key={item.id}
@@ -42,7 +42,7 @@ const Hero = () => {
                 {t(`nav.${item.id}`)}
               </a>
             ))}
-          </div>
+          </nav>
           <div className="hero-actions">
             <div className="language-select-wrapper">
               <LanguageSelect />
@@ -65,7 +65,7 @@ const Hero = () => {
               </svg>
             </button>
           </div>
-        </div>
+        </header>
         <div className="hero-main">
           <div className="hero-text">
             <h1 className="hero-title">

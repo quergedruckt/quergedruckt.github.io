@@ -13,14 +13,16 @@ const Home = () => {
   return (
     <div className="home-page">
       <Hero />
-      <AboutUs />
-      <Services />
-      <WhyChooseUs />
-      <Projects />
-      <HowItWorks />
-      <Testimonials />
-      <FAQ />
-      <Contact />
+      <main id="main-content" tabIndex={-1}>
+        <AboutUs />
+        <Services />
+        <WhyChooseUs />
+        <Projects />
+        <HowItWorks />
+        <Testimonials />
+        <FAQ />
+        <Contact />
+      </main>
       <Footer />
     </div>
   )

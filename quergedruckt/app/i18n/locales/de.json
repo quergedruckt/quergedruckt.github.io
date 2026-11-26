@@ -4,8 +4,7 @@
     "description": "Individueller 3D-Druck, Prototyping und Design-Services für Innovatoren, Maker und Unternehmen."
   },
   "common": {
-    "getAQuote": "Angebot anfordern",
-    "learnMore": "Mehr erfahren"
+    "getAQuote": "Angebot anfordern"
   },
   "nav": {
     "home": "Start",
@@ -22,6 +21,12 @@
     "en": "English",
     "de": "Deutsch"
   },
+  "a11y": {
+    "skipToContent": "Zum Hauptinhalt springen",
+    "mainNavigation": "Hauptnavigation",
+    "footerNavigation": "Fußnavigation",
+    "logoHome": "quergedruckt, zurück zur Startseite"
+  },
   "hero": {
     "titleLine1": "Entdecke die Vorteile",
     "titleLine2": "des 3D-Drucks",
@@ -30,11 +35,11 @@
   "about": {
     "label": "Über uns",
     "title": "Von der Idee zum fertigen Teil",
-    "description": "quergedruckt macht aus digitalen Entwürfen echte Bauteile. Wir konstruieren, bauen Prototypen und drucken. Gibt es keine Zeichnung, scannen wir das vorhandene Teil. Ob einzelnes Muster oder Kleinserie: Am Anfang steht ein Gespräch darüber, was du brauchst.",
+    "description": "quergedruckt macht aus digitalen Entwürfen echte Bauteile. Wir konstruieren, bauen Prototypen und drucken. Ob einzelnes Muster oder Kleinserie: Am Anfang steht ein Gespräch darüber, was du brauchst.",
     "features": {
       "insight": "Ein Ansprechpartner von der Skizze bis zum Teil",
       "scalable": "Einzelne Prototypen und Serienteile",
-      "audience": "Scannen, wenn keine Zeichnung existiert",
+      "audience": "Konstruktionshilfe, wenn noch kein Modell existiert",
       "strategy": "Klare Beratung ohne Fachchinesisch"
     }
   },
@@ -54,17 +59,13 @@
         "title": "Individueller 3D-Druck",
         "description": "Schick uns deine Datei, wir drucken sie. Einzelstücke und kleine Stückzahlen, in genau der Form, die du brauchst."
       },
-      "scanning": {
-        "title": "3D-Scanning",
-        "description": "Wir erfassen ein reales Objekt als digitales 3D-Modell. So lässt sich etwas kopieren, reparieren oder anpassen, das bisher nur auf deiner Werkbank existiert."
-      },
       "production": {
         "title": "Serienteile",
         "description": "Für Bauteile, die später im Einsatz sind, ist der 3D-Druck in kleinen Stückzahlen oft der praktischere Weg, denn er kommt ohne Werkzeug aus. Ob das für dein Teil passt, klären wir gern gemeinsam."
       },
       "reverse": {
         "title": "Reverse Engineering",
-        "description": "Ein Teil ist kaputt, wird nicht mehr hergestellt oder wurde nie dokumentiert. Wir scannen es, bauen das Modell neu auf und klären, wie sich das Teil wieder fertigen lässt."
+        "description": "Ein Teil ist kaputt, wird nicht mehr hergestellt oder wurde nie dokumentiert. Wir bauen sein Modell nach dem vorhandenen Teil neu auf und klären, wie sich das Teil wieder fertigen lässt."
       }
     }
   },
@@ -152,7 +153,7 @@
       },
       "noFile": {
         "question": "Brauche ich eine 3D-Datei?",
-        "answer": "Nein. Hast du eine Skizze, eine Zeichnung oder nur das reale Teil, arbeiten wir damit. Das 3D-Modell zeichnen oder scannen wir für dich."
+        "answer": "Nein. Hast du eine Skizze oder eine Zeichnung, arbeiten wir damit und zeichnen das 3D-Modell für dich."
       },
       "designHelp": {
         "question": "Gibt es Unterstützung beim Design?",
@@ -168,7 +169,6 @@
     "badge": "Kontakt",
     "title": "Erzähl uns, was du herstellen möchtest",
     "description": "Schick uns eine Nachricht mit deiner Idee, einer Skizze oder einer Datei. Wir lesen alles in Ruhe, fragen nach, was wir wissen müssen, und melden uns mit einem Angebot oder dem nächsten Schritt.",
-    "socialLabel": "Du findest uns auch hier:",
     "form": {
       "firstName": "Vorname",
       "lastName": "Nachname",
@@ -197,63 +197,6 @@
     "impressum": "Impressum"
   },
   "legal": {
-    "back": "Zurück zur Startseite",
-    "placeholderNotice": "Platzhalter: Die Angaben in eckigen Klammern vor dem Start durch die echten Daten ersetzen. Der erforderliche Inhalt hängt vom Unternehmen ab, daher den endgültigen Text prüfen lassen.",
-    "impressum": {
-      "title": "Impressum",
-      "metaTitle": "Impressum | quergedruckt",
-      "sections": {
-        "provider": {
-          "title": "Angaben gemäß § 5 DDG",
-          "body": "[Firma oder vollständiger Name]\n[Rechtsform]\n[Straße und Hausnummer]\n[PLZ und Ort]"
-        },
-        "contact": {
-          "title": "Kontakt",
-          "body": "[E-Mail-Adresse]\n[Telefonnummer]"
-        },
-        "representative": {
-          "title": "Vertreten durch",
-          "body": "[Name der vertretungsberechtigten Person]"
-        },
-        "register": {
-          "title": "Handelsregister",
-          "body": "[Registergericht und Registernummer, falls vorhanden]"
-        },
-        "vat": {
-          "title": "Umsatzsteuer-ID",
-          "body": "[Umsatzsteuer-Identifikationsnummer, falls vorhanden]"
-        },
-        "responsible": {
-          "title": "Verantwortlich für den Inhalt",
-          "body": "[Name und Anschrift]"
-        }
-      }
-    },
-    "privacy": {
-      "title": "Datenschutzerklärung",
-      "metaTitle": "Datenschutzerklärung | quergedruckt",
-      "sections": {
-        "controller": {
-          "title": "Verantwortliche Stelle",
-          "body": "[Name und Anschrift der verantwortlichen Stelle]\n[Kontakt-E-Mail für Datenschutzfragen]"
-        },
-        "hosting": {
-          "title": "Hosting",
-          "body": "Diese Website wird über GitHub Pages bereitgestellt. Beim Aufruf verarbeitet der Hosting-Anbieter technische Zugriffsdaten wie deine IP-Adresse, Datum und Uhrzeit der Anfrage und die aufgerufenen Seiten. Das ist nötig, um die Seite auszuliefern und sicher zu betreiben. Rechtsgrundlage ist unser berechtigtes Interesse nach Art. 6 Abs. 1 lit. f DSGVO."
-        },
-        "contactForm": {
-          "title": "Kontaktformular",
-          "body": "Wenn du das Kontaktformular nutzt, verarbeiten wir den eingegebenen Namen, die E-Mail-Adresse, die Telefonnummer (freiwillig) und die Nachricht, außerdem die auf der Seite gewählte Sprache. Wir verwenden diese Daten ausschließlich, um deine Anfrage zu beantworten. Das Formular wird von Formspree betrieben, das deine Nachricht an [Empfänger-E-Mail-Adresse] weiterleitet. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO bei Anfragen zu einem Vertrag, sonst unser berechtigtes Interesse nach Art. 6 Abs. 1 lit. f DSGVO. Wir löschen deine Daten, sobald deine Anfrage erledigt ist, sofern keine gesetzlichen Aufbewahrungspflichten bestehen. [Genaue Speicherdauer angeben und prüfen, ob Daten außerhalb der EU übermittelt werden.]"
-        },
-        "language": {
-          "title": "Spracheinstellung",
-          "body": "Die gewählte Sprache wird in deinem Browser gespeichert (Local Storage), damit die Seite sie beim nächsten Besuch wiedererkennt. Die Einstellung bleibt auf deinem Gerät und wird nicht an uns übertragen."
-        },
-        "rights": {
-          "title": "Rechte der betroffenen Personen",
-          "body": "Du hast das Recht auf Auskunft über deine Daten, auf Berichtigung und Löschung, auf Einschränkung der Verarbeitung, auf Datenübertragbarkeit und auf Widerspruch. Außerdem kannst du dich bei einer Datenschutz-Aufsichtsbehörde beschweren. Um deine Rechte geltend zu machen, melde dich über die oben genannten Kontaktdaten bei uns."
-        }
-      }
-    }
+    "back": "Zurück zur Startseite"
   }
 }

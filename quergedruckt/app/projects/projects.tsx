@@ -62,18 +62,6 @@ const Projects = () => {
                             {t(`projects.items.${id}.description`)}
                           </p>
                         </div>
-                        <div className="project-link">
-                          <p className="link-text">{t('common.learnMore')}</p>
-                          <div className="link-arrow">
-                            <Image
-                              src={ARROW}
-                              alt=""
-                              width={20}
-                              height={20}
-                              className="arrow-icon"
-                            />
-                          </div>
-                        </div>
                       </div>
                       {!imageFirst && imageBlock}
                     </div>

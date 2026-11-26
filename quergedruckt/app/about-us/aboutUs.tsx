@@ -28,7 +28,7 @@ const AboutUs = () => {
               <div className="feature-item" key={feature}>
                 <div className="feature-icon">
                   <Image
-                    src={FEATURE_ICON}
+                    src="/images/list-dot.svg"
                     alt=""
                     width={24}
                     height={24}
@@ -41,7 +41,7 @@ const AboutUs = () => {
         </div>
         <div className="about-us-image">
           <Image
-            src="https://www.figma.com/api/mcp/asset/f28c7ac6-6ce3-4512-93ab-775f85fb147c"
+            src="/images/example-img.svg"
             alt=""
             fill
             className="about-us-img"

@@ -15,7 +15,7 @@ const Hero = () => {
     <div className="hero" id="home">
       <div className="hero-background">
         <Image
-          src="https://www.figma.com/api/mcp/asset/82b4404f-ae80-4102-a83f-81b3189633f7"
+          src="/images/dragon.png"
           alt=""
           fill
           className="hero-bg-image"

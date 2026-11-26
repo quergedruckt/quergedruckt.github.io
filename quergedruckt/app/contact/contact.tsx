@@ -110,21 +110,6 @@ const Contact = () => {
               </p>
             </div>
           </div>
-          <div className="contact-social">
-            <p className="social-label">{t('contact.socialLabel')}</p>
-            <div className="social-icons">
-              {SOCIAL_ICONS.map(({ src, size }) => (
-                <div className="social-icon" key={src}>
-                  <Image
-                    src={src}
-                    alt=""
-                    width={size}
-                    height={size}
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
         <div className="contact-form-wrapper">
           <form className="contact-form" onSubmit={handleSubmit} noValidate>

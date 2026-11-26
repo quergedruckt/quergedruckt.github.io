@@ -17,7 +17,7 @@ const WhyChooseUs = () => {
     <div className="why-choose-us">
       <div className="why-choose-us-image">
         <Image
-          src="https://www.figma.com/api/mcp/asset/bec1ee29-72be-477a-92f4-0ac6c41137e2"
+          src="/images/why-us.svg"
           alt=""
           fill
           className="why-choose-us-img"

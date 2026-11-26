@@ -12,11 +12,9 @@ type Service = { id: string; icon: string; highlighted?: boolean };
 const SERVICE_ROWS: Service[][] = [
   [
     { id: 'prototyping', icon: 'https://www.figma.com/api/mcp/asset/ac00708f-84eb-4b7a-8ae2-7d6c2881fe6e' },
-    { id: 'design', icon: 'https://www.figma.com/api/mcp/asset/b4c8e385-be5c-4bc0-b170-c688d4083bdc', highlighted: true },
     { id: 'printing', icon: 'https://www.figma.com/api/mcp/asset/10fe9b44-cfbe-4f7d-aa87-65cc3e79d4de' },
   ],
   [
-    { id: 'scanning', icon: 'https://www.figma.com/api/mcp/asset/38476bab-c1bb-455e-b7ab-1f52d2599b8c' },
     { id: 'production', icon: 'https://www.figma.com/api/mcp/asset/525a239c-07db-41e1-9d5d-fd7e531e06e3' },
     { id: 'reverse', icon: 'https://www.figma.com/api/mcp/asset/4f2bf326-2df2-4d81-8662-039ba0aca739' },
   ],
@@ -57,18 +55,6 @@ const Services = () => {
                       <p className="service-description">
                         {t(`services.items.${id}.description`)}
                       </p>
-                    </div>
-                    <div className="service-link">
-                      <p className={`link-text${highlighted ? ' highlighted' : ''}`}>{t('common.learnMore')}</p>
-                      <div className="link-arrow">
-                        <Image
-                          src={highlighted ? ARROW_HIGHLIGHTED : ARROW}
-                          alt=""
-                          width={20}
-                          height={20}
-                          className="arrow-icon"
-                        />
-                      </div>
                     </div>
                   </div>
                 </div>

@@ -35,7 +35,7 @@ const HowItWorks = () => {
         </div>
         <div className="how-it-works-image">
           <Image
-            src="https://www.figma.com/api/mcp/asset/b4efa8b3-d86f-41da-ad32-60eef4fa556e"
+            src="/images/how.svg"
             alt=""
             fill
             className="how-it-works-img"
